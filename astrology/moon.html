@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Moon calendar for the month — phases, lunar days, void-of-course Moon · Iris Calder</title>
+<meta name="description" content="Moon calendar: Moon phases, lunar days with start times for your city, the Moon through the signs, void-of-course periods, eclipses and tips for every day.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#eef0f1">
+<meta property="og:title" content="Moon calendar — phases, lunar days, void-of-course Moon">
+<meta property="og:image" content="assets/img/og-image.jpg">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/newsreader-normal-latin-b76914.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/fonts.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/skin.css">
+<script>try{var t=localStorage.getItem('am_theme');document.documentElement.setAttribute('data-theme',t?JSON.parse(t):(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'))}catch(e){}try{if(!window.CSSViewTransitionRule&&!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('pt-fallback')}catch(e){}</script>
+<link rel="expect" href="#pt-ready" blocking="render">
+</head>
+<body>
+<main id="main">
+  <section class="page-hero">
+    <div class="container hero-anim">
+      <span class="eyebrow">Moon calendar</span>
+      <h1>The rhythm of <em class="accent">the Moon</em></h1>
+      <p class="lead">Phases, lunar days, signs and void-of-course periods — for planning your work, your rest and important decisions. Times are calculated for the city you choose.</p>
+    </div>
+  </section>
+
+  <section class="section tight" style="padding-top:0">
+    <div class="container">
+      <div class="row between" style="margin-bottom:16px">
+        <div id="cityBox" style="min-width:260px;max-width:360px;flex:1"></div>
+        <span class="small muted" id="tzNote"></span>
+      </div>
+      <div class="card" id="today"></div>
+      <div class="card" id="hoursBox" style="margin-top:20px"></div>
+    </div>
+  </section>
+
+  <section class="section tight">
+    <div class="container">
+      <div class="card">
+        <div class="cal-head">
+          <button class="icon-btn" type="button" id="prevM" aria-label="Previous month"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M15 6l-6 6 6 6"/></svg></button>
+          <h3 id="monthTitle"></h3>
+          <button class="icon-btn" type="button" id="nextM" aria-label="Next month"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 6l6 6-6 6"/></svg></button>
+        </div>
+        <div class="cal" id="cal" aria-live="polite"></div>
+        <div class="legend" style="margin-top:14px"><span><b class="glyph" style="color:var(--lav-strong)">♈&#xFE0E;</b> Moon’s sign</span><span><b style="color:var(--gold)">●</b> phases and eclipses</span><span><b style="color:var(--rose-strong)">2:20–6:05 PM</b> and the pink bar — void-of-course hours</span><span>l. d. — lunar days</span></div>
+      </div>
+      <div class="card" id="dayDetail" style="margin-top:20px"></div>
+      <div class="card" id="vocList" style="margin-top:20px"></div>
+    </div>
+  </section>
+
+  <section class="section tight">
+    <div class="container">
+      <div class="grid grid-2">
+        <div class="card"><h3>What is a void-of-course Moon?</h3><p class="muted">The stretch when the Moon has made its last major aspect in a sign and hasn’t yet moved into the next one. Traditionally, things started during this time “don’t develop” — it’s good for resting, finishing and tidying up, but not for starting anything important. It isn’t a whole day but specific hours: the calendar shows them to the minute for the city you choose.</p></div>
+        <div class="card"><h3>What are lunar days?</h3><p class="muted">The lunar month is divided into 29–30 lunar days. The first begins at the New Moon, and each one after that begins at moonrise — so the times depend on your city. Each lunar day has its own symbol and character.</p></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script src="js/content.js"></script>
+<script src="js/demo-api.js"></script>
+<script src="js/vendor/astronomy.browser.min.js"></script>
+<script src="js/chiron-data.js"></script>
+<script src="js/astro.js"></script>
+<script src="js/texts.js"></script>
+<script src="js/icons.js"></script>
+<script src="js/ui.js"></script>
+<span id="pt-ready" hidden></span>
+<script src="js/admin.js"></script>
+<script src="js/premium.js"></script>
+<script src="js/wheel.js"></script>
+<script src="js/cards.js"></script>
+<script src="js/pro.js"></script>
+<script src="js/pro-view.js"></script>
+<script src="js/pages/moon.js"></script>
+</body>
+</html>

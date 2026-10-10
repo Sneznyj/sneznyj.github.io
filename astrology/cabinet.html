@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Astrologer’s dashboard · Iris Calder</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#eef0f1">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/newsreader-normal-latin-b76914.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/fonts.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/skin.css">
+<script>try{var t=localStorage.getItem('am_theme');document.documentElement.setAttribute('data-theme',t?JSON.parse(t):(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'))}catch(e){}try{if(!window.CSSViewTransitionRule&&!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('pt-fallback')}catch(e){}</script>
+<link rel="expect" href="#pt-ready" blocking="render">
+</head>
+<body>
+<main id="main">
+  <section class="page-hero" style="padding-bottom:18px" data-private hidden>
+    <div class="container">
+      <span class="eyebrow">Workspace</span>
+      <h1 style="font-size:clamp(2rem,4vw,3rem)">Astrologer’s <em class="accent">dashboard</em></h1>
+      <div class="notice info" style="max-width:820px">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="5" y="10.5" width="14" height="10" rx="2.5"/><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3"/></svg>
+        <span>Clients, sessions and notes are stored <b>only in this browser on this device</b> and aren’t sent anywhere. Make regular backups in “Settings” — that way your data can move to another computer.</span>
+      </div>
+    </div>
+  </section>
+  <section class="section tight" style="padding-top:8px" data-private hidden>
+    <div class="container cab-layout">
+      <nav class="cab-nav" id="cabNav" aria-label="Dashboard sections"></nav>
+      <div id="view"></div>
+    </div>
+  </section>
+</main>
+
+<script src="js/content.js"></script>
+<script src="js/demo-api.js"></script>
+<script src="js/schedule.js"></script>
+<script src="js/vendor/astronomy.browser.min.js"></script>
+<script src="js/chiron-data.js"></script>
+<script src="js/astro.js"></script>
+<script src="js/texts.js"></script>
+<script src="js/icons.js"></script>
+<script src="js/ui.js"></script>
+<span id="pt-ready" hidden></span>
+<script src="js/booking.js"></script>
+<script src="js/admin.js"></script>
+<script src="js/premium.js"></script>
+<script src="js/wheel.js"></script>
+<script src="js/chart-view.js"></script>
+<script src="js/cards.js"></script>
+<script src="js/inbox.js"></script>
+<script src="js/pro.js"></script>
+<script src="js/pro-view.js"></script>
+<script src="js/numerology.js"></script>
+<script src="js/numerology-data.js"></script>
+<script src="js/horoscope-core.js"></script>
+<script src="js/academy-data.js"></script>
+<script src="js/person-view.js"></script>
+<!-- код кабинета зашифрован (js/locked), открывается после входа Алины -->
+<script>Admin.page({ names: ['cabinet-schedule', 'cabinet-requests', 'cabinet-care', 'cabinet-access', 'cabinet-sync', 'cabinet-client', 'cabinet-academy', 'cabinet'] });</script>
+</body>
+</html>

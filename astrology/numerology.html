@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Numerology by date of birth and name — life path number, Pythagorean square · Iris Calder</title>
+<meta name="description" content="Free numerology: your life path number, expression, soul and personality numbers, the Pythagorean square and your personal year. The basics of numerology in plain words — gentle, with no scare stories.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#eef0f1">
+<meta property="og:title" content="Numerology: your numbers from your date of birth and name">
+<meta property="og:image" content="assets/img/og-image.jpg">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/newsreader-normal-latin-b76914.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/fonts.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/skin.css">
+<script>try{var t=localStorage.getItem('am_theme');document.documentElement.setAttribute('data-theme',t?JSON.parse(t):(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'))}catch(e){}try{if(!window.CSSViewTransitionRule&&!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('pt-fallback')}catch(e){}</script>
+<link rel="expect" href="#pt-ready" blocking="render">
+</head>
+<body>
+<main id="main">
+  <section class="page-hero">
+    <div class="container hero-anim">
+      <span class="eyebrow">Numerology</span>
+      <h1>The language of your <em class="accent">numbers</em></h1>
+      <p class="lead">Numerology sees a rhythm in your date of birth and your name — the numbers 1 to 9. Find your main numbers in a minute: calculated right here, explained in plain words, with no scare stories.</p>
+      <div class="num-today" id="numToday"></div>
+    </div>
+  </section>
+
+  <section class="section tight" style="padding-top:0">
+    <div class="container tool-layout">
+      <aside>
+        <div class="card">
+          <div class="pp-box" id="nmPeople" hidden style="margin-bottom:12px"></div>
+          <form class="form" id="numForm" novalidate>
+            <div class="field"><label for="nmDate">Date of birth *</label><div id="nmDateBox"></div></div>
+            <div class="field"><label for="nmName">Full name at birth</label>
+              <input class="input" id="nmName" autocomplete="name" placeholder="First Middle Last" spellcheck="false">
+              <span class="hint">For the expression, soul and personality numbers. Your first name alone works too — or compare your birth name with the one you use now.</span></div>
+            <button class="btn btn-primary btn-block" type="submit">Calculate my numbers</button>
+            <p class="tiny muted" style="margin:0">Everything is calculated in your browser — your data isn’t sent anywhere.</p>
+          </form>
+        </div>
+      </aside>
+      <div id="numResult">
+        <div class="card result-empty num-empty">
+          <div class="num-empty-digits" aria-hidden="true"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span></div>
+          <h3>Your numbers are waiting</h3>
+          <p class="muted" style="max-width:46ch;margin-inline:auto">Enter your date of birth to see your life path number, the Pythagorean square and your personal year. Add your name to discover your expression, soul and personality numbers.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="numBasics">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">the basics</span>
+        <h2>Numerology <em class="accent">in five minutes</em></h2>
+        <p class="lead">The essentials about numbers — short and to the point.</p>
+      </div>
+      <div class="grid grid-3" id="numBasicsGrid"></div>
+
+      <div class="card reveal" style="margin-top:22px" id="numMeanings">
+        <div class="row between" style="margin-bottom:14px"><h3 style="margin:0">What the numbers mean</h3><span class="small muted">1 to 9 and the master numbers</span></div>
+        <div class="seg num-seg" role="group" aria-label="Choose a number" id="numSeg"></div>
+        <div id="numMeaning" style="margin-top:18px"></div>
+      </div>
+
+      <details class="card reveal num-letters" style="margin-top:22px">
+        <summary><b>Letter table</b> <span class="small muted">— the Pythagorean system for the Latin alphabet</span></summary>
+        <div class="table-wrap" style="margin-top:14px" id="numLetters"></div>
+        <p class="small muted" style="margin:12px 0 0">Letters are numbered around the alphabet: A — 1, B — 2 … I — 9, then J — 1 again. The vowels (A, E, I, O, U) give the soul number; the consonants give the personality number.</p>
+      </details>
+    </div>
+  </section>
+
+  <section class="section" id="numFaq" style="padding-top:0">
+    <div class="container">
+      <div class="section-head center reveal">
+        <span class="eyebrow both">questions</span>
+        <h2>Numerology FAQ</h2>
+      </div>
+      <div class="accordion" id="numFaqList"></div>
+      <div class="card note-card reveal" style="margin-top:26px;max-width:820px;margin-inline:auto" id="numNote"></div>
+    </div>
+  </section>
+</main>
+
+<script src="js/content.js"></script>
+<script src="js/demo-api.js"></script>
+<script src="js/vendor/astronomy.browser.min.js"></script>
+<script src="js/chiron-data.js"></script>
+<script src="js/astro.js"></script>
+<script src="js/texts.js"></script>
+<script src="js/icons.js"></script>
+<script src="js/ui.js"></script>
+<span id="pt-ready" hidden></span>
+<script src="js/admin.js"></script>
+<script src="js/premium.js"></script>
+<script src="js/cards.js"></script>
+<script src="js/numerology.js"></script>
+<script src="js/numerology-data.js"></script>
+<script src="js/pages/numerology.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Horoscope for today and this month, for every sign · Iris Calder</title>
+<meta name="description" content="Horoscopes for today, tomorrow and the month for each zodiac sign — based on where the Moon, Sun, Venus and Mars actually are. The day’s energy, love, work.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#eef0f1">
+<meta property="og:title" content="Today’s horoscope for every sign">
+<meta property="og:image" content="assets/img/og-image.jpg">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/newsreader-normal-latin-b76914.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/fonts.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/skin.css">
+<script>try{var t=localStorage.getItem('am_theme');document.documentElement.setAttribute('data-theme',t?JSON.parse(t):(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'))}catch(e){}try{if(!window.CSSViewTransitionRule&&!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('pt-fallback')}catch(e){}</script>
+<link rel="expect" href="#pt-ready" blocking="render">
+</head>
+<body>
+<main id="main">
+  <section class="page-hero">
+    <div class="container hero-anim">
+      <span class="eyebrow">Horoscope</span>
+      <h1>Horoscope <em class="accent">for your sign</em></h1>
+      <p class="lead">Not stock phrases, but a calculation from the real sky: where the Moon, Sun, Venus and Mars are right now relative to your sign. Choose a sign — your Sun sign or your rising sign.</p>
+    </div>
+  </section>
+  <section class="section tight" style="padding-top:0">
+    <div class="container">
+      <div class="pp-box" id="horoPeople" hidden style="margin-bottom:14px"></div>
+      <div class="sign-picker" id="picker" role="group" aria-label="Zodiac sign"></div>
+      <div class="card" style="margin-top:22px" id="horo"></div>
+      <div class="card note-card" style="margin-top:24px" data-note="A horoscope by sign is only 1/12 of the picture. A personal forecast in a reading takes your whole chart into account: the Moon, the Ascendant, houses and aspects." data-note-cta='<button class="btn btn-primary btn-sm" type="button" data-book="forecast">Book a forecast</button>'></div>
+    </div>
+  </section>
+</main>
+
+<script src="js/content.js"></script>
+<script src="js/demo-api.js"></script>
+<script src="js/vendor/astronomy.browser.min.js"></script>
+<script src="js/chiron-data.js"></script>
+<script src="js/astro.js"></script>
+<script src="js/texts.js"></script>
+<script src="js/icons.js"></script>
+<script src="js/ui.js"></script>
+<span id="pt-ready" hidden></span>
+<script src="js/admin.js"></script>
+<script src="js/premium.js"></script>
+<script src="js/horoscope-core.js"></script>
+<script src="js/pages/horoscope.js"></script>
+</body>
+</html>

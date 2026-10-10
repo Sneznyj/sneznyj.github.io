@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Iris Calder — Astrologer · Birth chart readings online from Asheville, NC</title>
+<meta name="description" content="Iris Calder reads birth charts online from Asheville, North Carolina: natal chart readings, year-ahead forecasts, relationship compatibility and well-timed dates. Free birth chart, moon calendar and horoscopes on the site.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#eef0f1">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Iris Calder — Astrologer">
+<meta property="og:description" content="Astrology for the decisions you’re actually facing. Readings online, wherever you are — plus a free birth chart and moon calendar.">
+<meta property="og:image" content="assets/img/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/newsreader-normal-latin-b76914.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" href="assets/img/iris-portrait.webp" type="image/webp">
+<link rel="stylesheet" href="css/fonts.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/skin.css">
+<script>try{var t=localStorage.getItem('am_theme');document.documentElement.setAttribute('data-theme',t?JSON.parse(t):(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'))}catch(e){}try{if(!window.CSSViewTransitionRule&&!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('pt-fallback')}catch(e){}</script>
+<link rel="expect" href="#pt-ready" blocking="render">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"Iris Calder — Astrologer","description":"Birth chart readings, year-ahead forecasts, relationship compatibility, electional dates and astrology lessons — online.","image":"assets/img/iris-portrait.webp","areaServed":"Worldwide","availableLanguage":"en","address":{"@type":"PostalAddress","addressLocality":"Asheville","addressRegion":"NC","addressCountry":"US"},"founder":{"@type":"Person","name":"Iris Calder","jobTitle":"Astrologer"}}</script>
+</head>
+<body class="home">
+<main id="main">
+
+  <!-- ===== Hero ===== -->
+  <section class="ed-hero">
+    <div class="container ed-hero-grid">
+      <div class="ed-hero-text hero-anim">
+        <p class="kicker">Astrologer · Asheville, North Carolina · Readings online</p>
+        <h1>Astrology for the decisions you’re <em>actually</em> facing.</h1>
+        <p class="lead">I’m Iris. I read birth charts for people in the middle of something — a move, a relationship, a job that no longer fits. Plain language, honest timing, and no doom.</p>
+        <div class="hero-cta">
+          <button class="btn btn-primary" type="button" data-book>Book a reading</button>
+          <a class="btn btn-ghost" href="#natalHome">Draw your chart — free</a>
+        </div>
+        <p class="price-hint" id="priceHint"></p>
+      </div>
+      <figure class="ed-portrait portrait-in">
+        <img src="assets/img/iris-portrait.webp" srcset="assets/img/iris-portrait-560.webp 560w, assets/img/iris-portrait.webp 880w" sizes="(max-width: 960px) 92vw, 440px" alt="Iris Calder sitting on a sofa in her living room" width="880" height="1100" fetchpriority="high">
+        <figcaption>
+          <a href="moon.html" class="fc-moon"><span class="moon-ico" id="fcMoonIco" aria-hidden="true"></span><span><b id="fcMoonTitle">The Moon today</b><span id="fcMoonSub">calculating…</span></span></a>
+        </figcaption>
+        <div class="sticker big" id="heroSticker" hidden></div>
+      </figure>
+    </div>
+
+    <div class="container">
+      <div class="ledger reveal" aria-labelledby="skyTitle">
+        <div class="ledger-head">
+          <h2 id="skyTitle" class="kicker">Today’s sky <span id="skyDate"></span></h2>
+          <a class="ledger-next" href="sky.html" id="fcEvent"><span class="np-ic" id="fcEventIco" aria-hidden="true"></span><span><b id="fcEventTitle">Next event</b> <span id="fcEventSub"></span></span></a>
+          <a class="link-arrow small" href="moon.html">Moon calendar <span data-ic="arrow"></span></a>
+        </div>
+        <div class="sky-strip" id="skyStrip"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Free birth chart ===== -->
+  <section class="section" id="natalHome" aria-labelledby="nhTitle">
+    <div class="container">
+      <div class="nh nh-ed reveal">
+        <div class="nh-form">
+          <p class="kicker">Free · takes a few seconds</p>
+          <h2 id="nhTitle">Your birth chart, drawn properly</h2>
+          <p class="muted">Date, time and place of birth — and the wheel appears, with notes on every planet and line. Hover or tap anything. Astrologers get dignities, midpoints, firdaria and directions as well.</p>
+          <div id="nhForm"></div>
+          <button class="btn btn-primary btn-block" type="button" id="nhGo" style="margin-top:14px">Draw my chart</button>
+        </div>
+        <div class="nh-result" id="nhResult" aria-live="polite"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== What people bring ===== -->
+  <section class="section" id="needs">
+    <div class="container split">
+      <div class="split-head reveal">
+        <p class="kicker">What people bring to a reading</p>
+        <h2>Not “what will happen” — <em>what to do about it</em></h2>
+        <p class="lead">A birth chart is a map of how you’re put together. These are the questions I hear most often.</p>
+      </div>
+      <ol class="needs-list" id="needsGrid"></ol>
+    </div>
+  </section>
+
+  <!-- ===== Readings and fees ===== -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="kicker">Readings &amp; fees</p>
+        <h2>Choose a reading</h2>
+        <p class="lead">Every reading is a conversation online — by video, voice or message. Afterwards you get the recording and short written notes.</p>
+      </div>
+      <div class="cur-switch" id="curSwitch"></div>
+      <div class="price-list" id="servicesGrid"></div>
+    </div>
+  </section>
+
+  <!-- ===== Bundles and gifts ===== -->
+  <section class="section tight" id="offers">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="kicker">Bundles &amp; gifts</p>
+        <h2>Two readings, <em>one conversation</em></h2>
+      </div>
+      <div class="grid grid-3" id="offersGrid"></div>
+    </div>
+  </section>
+
+  <!-- ===== How it works ===== -->
+  <section class="section tight" id="how">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="kicker">How it works</p>
+        <h2>Four steps, no pressure</h2>
+      </div>
+      <ol class="steps">
+        <li class="step reveal" style="--d:.0s"><span class="num">01</span><h4>Send the form</h4><p>Pick a reading and add your birth date, time and city. It takes two minutes and comes straight to me.</p></li>
+        <li class="step reveal" style="--d:.08s"><span class="num">02</span><h4>I reply</h4><p>Within one business day. I check anything unclear and offer times in your own time zone.</p></li>
+        <li class="step reveal" style="--d:.16s"><span class="num">03</span><h4>The reading</h4><p>Video, voice or message — whatever feels easiest. We go through your chart and your questions.</p></li>
+        <li class="step reveal" style="--d:.24s"><span class="num">04</span><h4>Notes to keep</h4><p>The recording, a short summary and the dates worth circling in your calendar.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ===== Free tools ===== -->
+  <section class="section" id="tools">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="kicker">Free on this site</p>
+        <h2>Tools you can use <em>tonight</em></h2>
+        <p class="lead">Your chart, your partner’s, the Moon for your city, the year ahead. Everything is calculated from real ephemeris data — the same math professional software uses.</p>
+      </div>
+      <div class="tool-index" id="toolsGrid"></div>
+    </div>
+  </section>
+
+  <!-- ===== About ===== -->
+  <section class="section" id="about">
+    <div class="container about-grid">
+      <figure class="about-fig reveal">
+        <img src="assets/img/desk.webp" srcset="assets/img/desk-700.webp 700w, assets/img/desk.webp 1400w" sizes="(max-width: 860px) 92vw, 520px" alt="An open notebook and a pen on a wooden desk by a lamp" width="1400" height="933" loading="lazy">
+        <figcaption id="aboutCaption"></figcaption>
+      </figure>
+      <div class="reveal" style="--d:.1s">
+        <p class="kicker">About</p>
+        <h2 id="aboutTitle"></h2>
+        <div id="aboutText"></div>
+        <div id="aboutStory"></div>
+        <dl class="values" id="aboutValues"></dl>
+        <p class="hand-sign" id="aboutSign"></p>
+        <div class="hero-cta" style="margin-bottom:0">
+          <button class="btn btn-primary" type="button" data-book>Book a reading</button>
+          <a class="btn btn-ghost" href="academy.html"><span data-ic="school"></span> Astrology lessons</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Learn ===== -->
+  <section class="section night-band photo-band" id="academy">
+    <img class="band-photo" src="assets/img/night-ridge-900.webp" srcset="assets/img/night-ridge-900.webp 900w, assets/img/night-ridge.webp 1800w" sizes="100vw" alt="" width="1800" height="1200" loading="lazy">
+    <div class="container" style="position:relative">
+      <div class="section-head reveal">
+        <p class="kicker">Learn</p>
+        <h2 id="acTitle"></h2>
+        <p class="lead" id="acText"></p>
+      </div>
+      <div class="grid grid-3" id="acFormats"></div>
+    </div>
+  </section>
+
+  <!-- ===== Reviews ===== -->
+  <section class="section" id="reviews">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="kicker">Kind words</p>
+        <h2>After a reading</h2>
+      </div>
+      <div class="reviews" id="reviewsList"></div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section class="section" id="faq" style="padding-top:0">
+    <div class="container split">
+      <div class="split-head reveal">
+        <p class="kicker">Questions</p>
+        <h2>Before you book</h2>
+        <p class="muted">Something not covered here? Ask it in the form — the question field is there for exactly that.</p>
+      </div>
+      <div class="accordion" id="faqList"></div>
+    </div>
+  </section>
+
+  <!-- ===== Booking ===== -->
+  <section class="section" id="booking" style="padding-top:0">
+    <div class="container">
+      <div class="booking-grid" id="bookingGrid">
+        <div class="reveal">
+          <p class="kicker">Book</p>
+          <h2>Let’s talk about <em>you</em></h2>
+          <div class="alina-say"><img src="assets/img/iris-avatar.webp" alt="Iris Calder" width="72" height="72" loading="lazy"><div class="bubble">Add your date, time and city of birth — the form reaches me together with your chart. The question is optional. I read everything, reply within one business day and suggest a time that suits you.</div></div>
+          <div class="stack" style="margin-top:22px" id="bookingContacts"></div>
+          <div class="notice info" style="margin-top:22px"><span data-ic="clock"></span><span>Not sure of your birth time? That’s fine — write “around 3 pm” or tick “I don’t know”, and we’ll pick a format that works without it.</span></div>
+        </div>
+        <div class="card solid reveal" style="--d:.1s" id="bookingCard"></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script src="js/content.js"></script>
+<script src="js/demo-api.js"></script>
+<script src="js/vendor/astronomy.browser.min.js"></script>
+<script src="js/chiron-data.js"></script>
+<script src="js/astro.js"></script>
+<script src="js/texts.js"></script>
+<script src="js/icons.js"></script>
+<script src="js/ui.js"></script>
+<span id="pt-ready" hidden></span>
+<script src="js/admin.js"></script>
+<script src="js/premium.js"></script>
+<script src="js/wheel.js"></script>
+<script src="js/chart-view.js"></script>
+<script src="js/cards.js"></script>
+<script src="js/pages/home.js"></script>
+</body>
+</html>

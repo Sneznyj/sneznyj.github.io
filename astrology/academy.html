@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Learn astrology from scratch — a free mini-course · Iris Calder</title>
+<meta name="description" content="A free astrology mini-course: the birth chart, elements, signs, planets, houses, aspects, the Moon, retrogrades and transits. Quizzes, an astrologer’s glossary and how-to guides.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#eef0f1">
+<meta property="og:title" content="Learn astrology from scratch — free">
+<meta property="og:image" content="assets/img/og-image.jpg">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/newsreader-normal-latin-b76914.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/fonts.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/skin.css">
+<script>try{var t=localStorage.getItem('am_theme');document.documentElement.setAttribute('data-theme',t?JSON.parse(t):(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'))}catch(e){}try{if(!window.CSSViewTransitionRule&&!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('pt-fallback')}catch(e){}</script>
+<link rel="expect" href="#pt-ready" blocking="render">
+</head>
+<body>
+<main id="main">
+  <section class="page-hero">
+    <div class="container hero-anim">
+      <span class="eyebrow">Learning</span>
+      <h1>Astrology <em class="accent">from scratch</em></h1>
+      <p class="lead">Ten short lessons with quizzes — and you’ll be able to read your own birth chart. Your progress is saved on this device.</p>
+      <div style="max-width:420px;margin-top:10px"><div class="row between small"><span id="progText"></span><span class="muted" id="progPct"></span></div><div class="progress" style="margin-top:6px"><i id="progBar" style="width:0"></i></div></div>
+    </div>
+  </section>
+
+  <section class="section tight" style="padding-top:0">
+    <div class="container">
+      <div class="tabs" role="tablist" style="margin-bottom:22px">
+        <button role="tab" id="t-course-btn" aria-controls="t-course" aria-selected="true">Mini-course</button>
+        <button role="tab" id="t-guides-btn" aria-controls="t-guides" aria-selected="false" tabindex="-1">Guides</button>
+        <button role="tab" id="t-gloss-btn" aria-controls="t-gloss" aria-selected="false" tabindex="-1">Astrologer’s glossary</button>
+      </div>
+      <div class="tab-panel" role="tabpanel" id="t-course">
+        <div class="academy-layout">
+          <aside class="card" style="padding:14px"><div class="lesson-list" id="lessonList"></div></aside>
+          <article class="card lesson-body" id="lesson"></article>
+        </div>
+      </div>
+      <div class="tab-panel" role="tabpanel" id="t-guides" hidden><div class="accordion" id="guides" style="max-width:none"></div></div>
+      <div class="tab-panel" role="tabpanel" id="t-gloss" hidden>
+        <div class="toolbar"><input class="input" id="glossQ" placeholder="Search a term…" aria-label="Search a term"></div>
+        <div class="glossary" id="gloss"></div>
+      </div>
+      <div class="card note-card" style="margin-top:24px" data-note="Want to keep going? Let’s study using your own chart — it sticks many times faster that way." data-note-cta='<button class="btn btn-primary btn-sm" type="button" data-book="lessons">Book a lesson</button>'></div>
+    </div>
+  </section>
+</main>
+
+<script src="js/content.js"></script>
+<script src="js/demo-api.js"></script>
+<script src="js/vendor/astronomy.browser.min.js"></script>
+<script src="js/astro.js"></script>
+<script src="js/texts.js"></script>
+<script src="js/academy-data.js"></script>
+<script src="js/icons.js"></script>
+<script src="js/ui.js"></script>
+<span id="pt-ready" hidden></span>
+<script src="js/admin.js"></script>
+<script src="js/premium.js"></script>
+<script src="js/pages/academy.js"></script>
+</body>
+</html>

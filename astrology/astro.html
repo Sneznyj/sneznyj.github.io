@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Chart studio — my charts: natal, forecast, numbers, compatibility · Iris Calder</title>
+<meta name="description" content="A free chart studio for astrologers and anyone learning astrology: save the charts of friends and clients, and open a person’s birth chart, forecast, numerology, horoscope and compatibility in one place.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#eef0f1">
+<meta property="og:title" content="Chart studio — my charts">
+<meta property="og:image" content="assets/img/og-image.jpg">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/newsreader-normal-latin-b76914.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/fonts.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/skin.css">
+<script>try{var t=localStorage.getItem('am_theme');document.documentElement.setAttribute('data-theme',t?JSON.parse(t):(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'))}catch(e){}try{if(!window.CSSViewTransitionRule&&!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('pt-fallback')}catch(e){}</script>
+<link rel="expect" href="#pt-ready" blocking="render">
+</head>
+<body>
+<main id="main">
+  <section class="page-hero" style="padding-bottom:18px">
+    <div class="container hero-anim">
+      <span class="eyebrow">For astrologers and anyone learning astrology</span>
+      <h1>Chart studio · <em class="accent">my charts</em></h1>
+      <p class="lead">Save the charts of friends and clients — and see everything about a person in one place: the birth chart with professional techniques, forecast, numbers, horoscope and compatibility. Data is stored only in your browser.</p>
+    </div>
+  </section>
+  <section class="section tight" style="padding-top:0">
+    <div class="container astro-layout">
+      <aside class="card astro-list" aria-label="My charts">
+        <div class="row between" style="gap:8px"><h3 style="margin:0">My charts</h3><button class="btn btn-primary btn-xs" type="button" data-ap="new"><span data-ic="plus"></span> New</button></div>
+        <input class="input" id="apQ" type="search" placeholder="Search by name or city" aria-label="Search charts" style="margin-top:12px">
+        <div class="ap-people" id="apPeople"></div>
+        <details class="details-adv" style="margin-top:12px"><summary>Move to another device</summary>
+          <p class="small muted" style="margin:8px 0">Charts are stored in this browser. Save the file and load it on another phone or computer.</p>
+          <div class="row" style="gap:8px"><button class="btn btn-ghost btn-xs" type="button" data-ap="export"><span data-ic="download"></span> Download file</button><label class="btn btn-ghost btn-xs" style="cursor:pointer"><span data-ic="upload"></span> Load<input type="file" id="apImport" accept=".json,application/json" hidden></label></div>
+        </details>
+      </aside>
+      <div id="apMain"></div>
+    </div>
+  </section>
+</main>
+
+<script src="js/content.js"></script>
+<script src="js/demo-api.js"></script>
+<script src="js/vendor/astronomy.browser.min.js"></script>
+<script src="js/chiron-data.js"></script>
+<script src="js/astro.js"></script>
+<script src="js/texts.js"></script>
+<script src="js/icons.js"></script>
+<script src="js/ui.js"></script>
+<span id="pt-ready" hidden></span>
+<script src="js/admin.js"></script>
+<script src="js/premium.js"></script>
+<script src="js/wheel.js"></script>
+<script src="js/chart-view.js"></script>
+<script src="js/cards.js"></script>
+<script src="js/pro.js"></script>
+<script src="js/pro-view.js"></script>
+<script src="js/numerology.js"></script>
+<script src="js/numerology-data.js"></script>
+<script src="js/horoscope-core.js"></script>
+<script src="js/person-view.js"></script>
+<script src="js/pages/astro.js"></script>
+</body>
+</html>

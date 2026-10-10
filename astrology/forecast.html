@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Your personal astrology forecast — transits, solar return, progressions · Iris Calder</title>
+<meta name="description" content="A personal forecast from your birth chart: month-by-month planetary transits with interpretation, the solar return (the chart of your year), secondary progressions and the sky on any date.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#eef0f1">
+<meta property="og:title" content="Your personal astrology forecast">
+<meta property="og:image" content="assets/img/og-image.jpg">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/newsreader-normal-latin-b76914.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/fonts.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/skin.css">
+<script>try{var t=localStorage.getItem('am_theme');document.documentElement.setAttribute('data-theme',t?JSON.parse(t):(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'))}catch(e){}try{if(!window.CSSViewTransitionRule&&!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('pt-fallback')}catch(e){}</script>
+<link rel="expect" href="#pt-ready" blocking="render">
+</head>
+<body>
+<main id="main">
+  <section class="page-hero">
+    <div class="container hero-anim">
+      <span class="eyebrow">Forecast · premium</span>
+      <h1>Your <em class="accent">personal</em> forecast</h1>
+      <p class="lead">Transits show how the current planets “touch” your chart. Here you can see when periods of growth, change and testing begin — and how long they last. Plus the solar return, the chart of your year, and progressions.</p>
+      <p class="small muted" style="margin:0">The calculation and the main theme of the period are free. The full forecast with interpretations and dates is part of <a href="premium.html">premium access</a>.</p>
+    </div>
+  </section>
+
+  <section class="section tight" style="padding-top:0">
+    <div class="container tool-layout">
+      <aside>
+        <div class="card">
+          <div id="birthForm"></div>
+          <hr class="divider" style="margin:18px 0">
+          <div class="form">
+            <div class="form-row">
+              <div class="field"><label for="startMonth">Start</label><input class="input" type="month" id="startMonth"></div>
+              <div class="field"><label for="period">Period</label><select class="select" id="period"><option value="1">1 month</option><option value="3">3 months</option><option value="6" selected>6 months</option><option value="12">12 months</option></select></div>
+            </div>
+            <label class="switch"><input type="checkbox" id="fastToggle"> Fast planets (Sun, Mercury, Venus)</label>
+          </div>
+          <button class="btn btn-primary btn-block" id="calcBtn" type="button" style="margin-top:18px">Calculate forecast</button>
+        </div>
+      </aside>
+      <div class="tool-main">
+      <div id="result">
+        <div class="card result-empty">
+          <div class="big" aria-hidden="true">♃&#xFE0E;</div>
+          <h3>What lies ahead?</h3>
+          <p class="muted" style="max-width:48ch;margin-inline:auto">Enter your birth details and choose a period. You’ll get a calendar of key transits with interpretations, the chart of your year, and progressions.</p>
+        </div>
+      </div>
+        <div id="proForecast" style="margin-top:20px" hidden></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script src="js/content.js"></script>
+<script src="js/demo-api.js"></script>
+<script src="js/vendor/astronomy.browser.min.js"></script>
+<script src="js/chiron-data.js"></script>
+<script src="js/astro.js"></script>
+<script src="js/texts.js"></script>
+<script src="js/icons.js"></script>
+<script src="js/ui.js"></script>
+<span id="pt-ready" hidden></span>
+<script src="js/admin.js"></script>
+<script src="js/premium.js"></script>
+<script src="js/wheel.js"></script>
+<script src="js/chart-view.js"></script>
+<!-- подробный прогноз зашифрован (js/locked/forecast.js): открывается кодом премиум-доступа или входом Алины -->
+<script src="js/pro.js"></script>
+<script src="js/pro-view.js"></script>
+<script src="js/pages/forecast.js"></script>
+</body>
+</html>

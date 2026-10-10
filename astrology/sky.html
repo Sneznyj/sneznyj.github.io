@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sky events of the year — retrograde planets, eclipses, New Moons · Iris Calder</title>
+<meta name="description" content="A calendar of the year’s astrological events: Mercury retrograde and other retrogrades with their shadow periods, solar and lunar eclipses, New and Full Moons and sign changes.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#eef0f1">
+<meta property="og:title" content="Sky events of the year">
+<meta property="og:image" content="assets/img/og-image.jpg">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/newsreader-normal-latin-b76914.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/fonts.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/skin.css">
+<script>try{var t=localStorage.getItem('am_theme');document.documentElement.setAttribute('data-theme',t?JSON.parse(t):(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'))}catch(e){}try{if(!window.CSSViewTransitionRule&&!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('pt-fallback')}catch(e){}</script>
+<link rel="expect" href="#pt-ready" blocking="render">
+</head>
+<body>
+<main id="main">
+  <section class="page-hero">
+    <div class="container hero-anim">
+      <span class="eyebrow">Sky calendar</span>
+      <h1>Sky events <em class="accent" id="yearTitle"></em></h1>
+      <p class="lead">Retrograde planets, eclipses, New and Full Moons, sign changes — everything astrologers take into account when planning. Times are shown in your device’s time zone.</p>
+      <div class="row" style="margin-top:8px">
+        <button class="btn btn-ghost btn-sm" id="prevY" type="button">← Previous year</button>
+        <button class="btn btn-ghost btn-sm" id="nextY" type="button">Next year →</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="section tight" style="padding-top:0">
+    <div class="container">
+      <div class="card"><h3>Planets now</h3><div id="nowTable"></div></div>
+    </div>
+  </section>
+
+  <section class="section tight">
+    <div class="container">
+      <div class="card">
+        <div class="row between"><h3 style="margin:0">Retrograde planets</h3><div class="legend"><span><i style="background:linear-gradient(90deg,#c96b8f,#b07ad8);height:8px"></i>retrograde</span><span><i style="background:var(--rose);height:6px"></i>shadow period</span><span><i style="background:var(--gold);width:3px;height:12px"></i>today</span></div></div>
+        <div id="gantt" style="margin-top:18px"></div>
+        <div id="retroList" class="interp" style="margin-top:22px"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section tight">
+    <div class="container grid grid-2" style="align-items:start">
+      <div class="card"><h3>Eclipses</h3><div class="event-list" id="eclipses"></div></div>
+      <div class="card"><h3>New and Full Moons</h3><div class="event-list" id="lunations"></div></div>
+    </div>
+  </section>
+
+  <section class="section tight">
+    <div class="container">
+      <div class="card"><h3>Sign changes (ingresses)</h3><p class="muted small">When a planet moves into a new sign, the “tone” of its expression changes for everyone. Ingresses of the slow planets are especially noticeable.</p><div class="event-list" id="ingresses"></div></div>
+    </div>
+  </section>
+  <section class="section tight" id="ephemeris">
+    <div class="container">
+      <div class="card" id="ephBox"></div>
+    </div>
+  </section>
+</main>
+
+<script src="js/content.js"></script>
+<script src="js/demo-api.js"></script>
+<script src="js/vendor/astronomy.browser.min.js"></script>
+<script src="js/chiron-data.js"></script>
+<script src="js/astro.js"></script>
+<script src="js/texts.js"></script>
+<script src="js/icons.js"></script>
+<script src="js/ui.js"></script>
+<span id="pt-ready" hidden></span>
+<script src="js/admin.js"></script>
+<script src="js/premium.js"></script>
+<script src="js/pro.js"></script>
+<script src="js/pro-view.js"></script>
+<script src="js/pages/sky.js"></script>
+</body>
+</html>

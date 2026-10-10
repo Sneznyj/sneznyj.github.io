@@ -1,0 +1,69 @@
+{
+  "_comment": "Кейс «Вокал-Студия» для лендинга Nevaro Studio. Все цифры — проверенные факты о сайте на 10.10.2026; цифр посещаемости пока нет (сайт запущен в октябре 2026), не придумывать. images — для английской страницы, images_ru — для русской; рядом *-sm.webp (800 px, телефон 390 px) для srcset и исходные PNG.",
+  "url": "https://sneznyj.github.io/vocal-studio/en/",
+  "url_ru": "https://sneznyj.github.io/vocal-studio/",
+  "logo": "favicon.svg",
+  "logo_png": "icon-512.png",
+  "images": ["home-en.webp", "guitar-tuner-en.webp", "warmups-en.webp"],
+  "images_ru": ["home-ru.webp", "sing-along-ru.webp", "studio-ru.webp"],
+  "image_mobile": "mobile-guitar-tuner-en.webp",
+  "image_alt": {
+    "home-en.webp": "Vocal Studio home page: record your voice and try autotune in one click",
+    "guitar-tuner-en.webp": "Guitar tuner: the A string is 12 cents flat, the tuner says “tighten slightly”",
+    "warmups-en.webp": "Vocal warm-ups with a piano accompaniment",
+    "mobile-guitar-tuner-en.webp": "Guitar tuner on a phone",
+    "home-ru.webp": "Главная Вокал-Студии: запись голоса и автотюн в один клик",
+    "sing-along-ru.webp": "Пение под песню: ноты оригинала и линия голоса в реальном времени",
+    "studio-ru.webp": "Студия: пресеты обработки, ноты до и после автотюна",
+    "instant-demo-ru.webp": "Проба голоса прямо на главной: запись и пресеты",
+    "guitar-tuner-ru.webp": "Тюнер для гитары: струна «ля» ниже на 12 центов, подсказка «чуть подтяните»"
+  },
+  "facts": {
+    "pages": 50,
+    "pages_per_language": 25,
+    "languages": ["ru", "en"],
+    "instrument_tuners": 11,
+    "plus_chromatic_tuner": true,
+    "analytics_goals": 7,
+    "automated_tests": 53,
+    "search_consoles": ["Google Search Console", "Yandex Webmaster"],
+    "sign_up_required": false,
+    "launched": "2026-10"
+  },
+  "en": {
+    "tag": "Own product · music · 2026",
+    "title": "Vocal Studio — a free singing app built to be found in search",
+    "lead": "A web app for singers and musicians: record and autotune your voice, sing along to any song with live pitch, warm up with a piano and tune 11 instruments. We built it the way we build client sites: every tool has its own page written for what people actually search, in two languages, so traffic comes from Google and Yandex rather than from ads.",
+    "points": [
+      "50 pages in English and Russian, each aimed at a real search: “guitar tuner online”, “vocal warm-ups”, “sing along to a backing track”",
+      "Language picked by the visitor’s browser and time zone; hreflang, sitemap and structured data so search engines show each country the right version",
+      "Pages are pre-rendered, so search engines read the text without running JavaScript; new pages are submitted instantly via IndexNow",
+      "Analytics with 7 goals (microphone on, guitar tuned, track exported…) show which pages bring people who actually use the site",
+      "Works on a phone, no sign-up, recordings never leave the device"
+    ],
+    "numbers": [
+      ["50", "pages in search, 2 languages"],
+      ["12", "tuners: 11 instruments + chromatic"],
+      ["7", "conversion goals tracked"],
+      ["0", "sign-ups or downloads needed"]
+    ]
+  },
+  "ru": {
+    "tag": "Свой продукт · музыка · 2026",
+    "title": "Вокал-Студия — бесплатный сайт для пения, который находят через поиск",
+    "lead": "Веб-приложение для вокалистов и музыкантов: запись и автотюн голоса, пение под любую песню с линией нот, распевки под рояль и тюнер для 11 инструментов. Сделано так же, как мы делаем сайты клиентам: у каждого инструмента своя страница под то, что люди реально ищут, на двух языках — посетители приходят из Google и Яндекса, а не из рекламы.",
+    "points": [
+      "50 страниц на русском и английском, каждая под реальный запрос: «тюнер для гитары онлайн», «распевки онлайн», «петь под минус»",
+      "Язык выбирается сам — по браузеру и часовому поясу посетителя; hreflang, карта сайта и разметка, чтобы поисковики показывали каждой стране свою версию",
+      "Страницы собраны заранее: поисковики читают текст без JavaScript, новые страницы сразу отправляются через IndexNow",
+      "Метрика с 7 целями (включил микрофон, настроил гитару, скачал трек…) показывает, какие страницы приводят тех, кто реально пользуется сайтом",
+      "Работает с телефона, без регистрации, записи не покидают устройство"
+    ],
+    "numbers": [
+      ["50", "страниц в поиске, 2 языка"],
+      ["12", "тюнеров: 11 инструментов + хроматический"],
+      ["7", "целей-конверсий в Метрике"],
+      ["0", "регистраций и скачиваний"]
+    ]
+  }
+}

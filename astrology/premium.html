@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Premium access — personal forecasts and in-depth readings · Iris Calder</title>
+<meta name="description" content="Premium access on astrologer Iris Calder’s site: a personal forecast with dates, in-depth couple compatibility, the complete birth chart and a numerology calendar. No automatic renewals.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#eef0f1">
+<meta property="og:title" content="Premium access: dated forecasts and in-depth readings">
+<meta property="og:image" content="assets/img/og-image.jpg">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/newsreader-normal-latin-b76914.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/fonts.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/skin.css">
+<script>try{var t=localStorage.getItem('am_theme');document.documentElement.setAttribute('data-theme',t?JSON.parse(t):(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'))}catch(e){}try{if(!window.CSSViewTransitionRule&&!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('pt-fallback')}catch(e){}</script>
+<link rel="expect" href="#pt-ready" blocking="render">
+</head>
+<body>
+<main id="main" class="premium-page">
+  <section class="page-hero">
+    <div class="container hero-anim">
+      <span class="eyebrow">Premium access</span>
+      <h1>Precise forecasts and <em class="accent">in-depth readings</em></h1>
+      <p class="lead">The site’s basic tools are free. Premium opens what usually stays behind the scenes: a personal forecast with dates, every connection between a couple, the complete birth chart and a numerology calendar.</p>
+      <div id="pmStatus"></div>
+    </div>
+  </section>
+
+  <section class="section tight" style="padding-top:0">
+    <div class="container">
+      <div class="grid grid-2" id="pmFeatures"></div>
+    </div>
+  </section>
+
+  <section class="section tight" id="plans">
+    <div class="container">
+      <div class="section-head center reveal">
+        <span class="eyebrow">plans</span>
+        <h2>One pass — <em class="accent">every premium section</em></h2>
+        <p class="lead">A one-time payment, not a subscription — nothing renews automatically. When your term ends, extend it whenever you like.</p>
+      </div>
+      <div id="pmPlans" class="pm-plans"></div>
+    </div>
+  </section>
+
+  <section class="section tight">
+    <div class="container">
+      <div class="section-head center reveal">
+        <span class="eyebrow">how it works</span>
+        <h2>Four steps to <em class="accent">your full forecast</em></h2>
+      </div>
+      <ol class="pm-steps" id="pmSteps"></ol>
+      <div class="card pm-activate reveal" id="pmActivate"></div>
+    </div>
+  </section>
+
+  <section class="section tight">
+    <div class="container pm-narrow">
+      <div class="section-head center reveal">
+        <span class="eyebrow both">questions</span>
+        <h2>Good to <em class="accent">know</em></h2>
+      </div>
+      <div class="accordion" id="pmFaq"></div>
+      <div class="card pm-terms reveal" id="pmTerms" style="margin-top:22px"></div>
+      <div class="card note-card reveal" style="margin-top:22px" id="pmNote"></div>
+    </div>
+  </section>
+</main>
+
+<script src="js/content.js"></script>
+<script src="js/demo-api.js"></script>
+<script src="js/vendor/astronomy.browser.min.js"></script>
+<script src="js/astro.js"></script>
+<script src="js/texts.js"></script>
+<script src="js/icons.js"></script>
+<script src="js/ui.js"></script>
+<span id="pt-ready" hidden></span>
+<script src="js/admin.js"></script>
+<script src="js/premium.js"></script>
+<script src="js/pages/premium.js"></script>
+</body>
+</html>

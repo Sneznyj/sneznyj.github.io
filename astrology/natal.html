@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Free birth chart online — Iris Calder, astrologer</title>
+<meta name="description" content="Build your birth chart for free: the chart wheel, planets in signs and houses, aspects, elements and a detailed interpretation. Precise ephemeris; Placidus and other house systems.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#eef0f1">
+<meta property="og:title" content="Free birth chart online">
+<meta property="og:image" content="assets/img/og-image.jpg">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/newsreader-normal-latin-b76914.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/fonts.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/skin.css">
+<script>try{var t=localStorage.getItem('am_theme');document.documentElement.setAttribute('data-theme',t?JSON.parse(t):(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'))}catch(e){}try{if(!window.CSSViewTransitionRule&&!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('pt-fallback')}catch(e){}</script>
+<link rel="expect" href="#pt-ready" blocking="render">
+</head>
+<body>
+<main id="main">
+  <section class="page-hero">
+    <div class="container hero-anim">
+      <span class="eyebrow">Free tool</span>
+      <h1>Birth chart <em class="accent">online</em></h1>
+      <p class="lead">A map of the sky at the moment you were born: planets in signs and houses, aspects, the balance of elements and a detailed interpretation. Calculated from a precise ephemeris — like professional astrology software.</p>
+    </div>
+  </section>
+
+  <section class="section tight" style="padding-top:0">
+    <div class="container tool-layout">
+      <aside>
+        <div class="card">
+          <div id="birthForm"></div>
+          <div id="settingsBox" style="margin-top:14px"></div>
+          <button class="btn btn-primary btn-block" id="calcBtn" type="button" style="margin-top:18px">Build my chart</button>
+          <p class="tiny muted" style="margin:12px 0 0">Your details aren’t sent to any server — everything is calculated right in your browser.</p>
+        </div>
+        <div class="card" style="margin-top:16px" id="recentBox" hidden>
+          <h4 style="margin-bottom:10px">Recent charts</h4>
+          <div class="recent" id="recentList"></div>
+        </div>
+      </aside>
+      <div id="result">
+        <div class="card result-empty">
+          <div class="big" aria-hidden="true">☉&#xFE0E;</div>
+          <h3>Your sky is waiting</h3>
+          <p class="muted" style="max-width:46ch;margin-inline:auto">Enter your date, time and place of birth — and in a second you’ll see your birth chart with its interpretation.</p>
+          <div class="notice info" style="max-width:520px;margin:20px auto 0;text-align:left"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="8.5"/><path d="M12 11v5.5M12 7.6v.1"/></svg><span>An accurate birth time matters for the Ascendant and houses: the Ascendant moves about 1° every 4 minutes. The time is usually on your hospital birth record or birth certificate.</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script src="js/content.js"></script>
+<script src="js/demo-api.js"></script>
+<script src="js/vendor/astronomy.browser.min.js"></script>
+<script src="js/chiron-data.js"></script>
+<script src="js/astro.js"></script>
+<script src="js/texts.js"></script>
+<script src="js/icons.js"></script>
+<script src="js/ui.js"></script>
+<span id="pt-ready" hidden></span>
+<script src="js/admin.js"></script>
+<script src="js/premium.js"></script>
+<script src="js/wheel.js"></script>
+<script src="js/chart-view.js"></script>
+<script src="js/pro.js"></script>
+<script src="js/pro-view.js"></script>
+<script src="js/cards.js"></script>
+<script src="js/pages/natal.js"></script>
+</body>
+</html>
