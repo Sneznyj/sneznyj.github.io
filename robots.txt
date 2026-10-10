@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sneznyj.github.io/vocal-studio/sitemap.xml
