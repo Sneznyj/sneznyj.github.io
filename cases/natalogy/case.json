@@ -1,0 +1,64 @@
+{
+  "_comment": "Кейс «Natalogy» для лендинга Nevaro Studio (12.10.2026). Свой продукт, закрытая бета: сайт закрыт от поисковиков (noindex), ссылка только здесь. Цифры — проверенные факты: 7 сфер, 10 дел, 9 типов карт, сверка со Swiss Ephemeris точнее 1′ (_dev/test_engine.js в C:\\Sites\\Natalogy). Снимки — вымышленные Mia (EN) и Анна (RU), никаких настоящих данных рождения. Снимает _dev/case_shots.js в папке Natalogy.",
+  "url": "https://sneznyj.github.io/natalogy/",
+  "url_ru": "https://sneznyj.github.io/natalogy/",
+  "logo": "favicon.svg",
+  "logo_png": "icon-512.png",
+  "images": ["calendar-en.webp", "chart-en.webp"],
+  "images_ru": ["calendar-ru.webp", "chart-ru.webp"],
+  "image_mobile": "mobile-today-en.webp",
+  "image_alt": {
+    "calendar-en.webp": "Natalogy calendar: every day scored from 1 to 10, with the day panel on the right",
+    "chart-en.webp": "Birth chart with transits in a Sotis/Chronos-style wheel, positions on the right and a time slider",
+    "mobile-today-en.webp": "Today on a phone: day score, week strip and scores by life area",
+    "calendar-ru.webp": "Календарь Natalogy: у каждого дня баллы от 1 до 10, справа — панель выбранного дня",
+    "chart-ru.webp": "Натальная карта с транзитами: колесо как в Sotis и Chronos, положения справа и перемотка времени"
+  },
+  "facts": {
+    "life_areas": 7,
+    "activities": 10,
+    "chart_types": 9,
+    "languages": ["ru", "en"],
+    "accuracy_vs_swiss_ephemeris": "better than 1 arcminute",
+    "runs_on_device": true,
+    "sign_up_required": false,
+    "status": "closed beta, noindex",
+    "built": "2026-10"
+  },
+  "en": {
+    "tag": "Own product · astrology · beta 2026",
+    "title": "Natalogy — a personal astrology calendar that scores every day",
+    "lead": "An app for people who don’t know astrology: enter a birth date and see which days suit love, money, work and launches, scored from 1 to 10. Behind the simple screens sits a full astro workbench — the same engine we put into astrologers’ sites.",
+    "points": [
+      "Every day scored 1–10 for 7 life areas and 10 activities — a date, a contract, a big purchase; hover a day for a summary, click for the full picture",
+      "Events of the day to the minute: transits to your chart, Moon sign changes, void-of-course hours and the best hours to start",
+      "A Sotis/Chronos-style chart wheel you can scroll through days and hours; two fully independent charts side by side",
+      "Birth-time rectification from life events, with an honest randomness check",
+      "Everything is calculated on the device, works offline, no sign-up; positions match Swiss Ephemeris to under 1′"
+    ],
+    "numbers": [
+      ["1–10", "score for every day, 7 life areas"],
+      ["10", "activities ranked by best days"],
+      ["9", "chart types in the pro workbench"],
+      ["<1′", "difference from Swiss Ephemeris"]
+    ]
+  },
+  "ru": {
+    "tag": "Свой продукт · астрология · бета 2026",
+    "title": "Natalogy — личный астрокалендарь с баллами на каждый день",
+    "lead": "Приложение для тех, кто не знает астрологию: ввёл дату рождения — и видно, какие дни хороши для любви, денег, работы и запусков, с баллами от 1 до 10. За простыми экранами — полноценный астропроцессор на том же движке, что и сайты астрологов.",
+    "points": [
+      "Баллы 1–10 на каждый день по 7 сферам и 10 делам — свидание, договор, крупная покупка; наведи на день — кратко, нажми — всё подробно",
+      "События дня с точностью до минуты: транзиты к карте, смена знака Луны, часы Луны без курса и лучшие часы для старта",
+      "Колесо карты как в Sotis и Chronos с перемоткой дней и часов; две полностью независимые карты рядом",
+      "Ректификация времени рождения по событиям жизни — с честной проверкой на случайность",
+      "Всё считается на устройстве, работает без интернета и без регистрации; положения планет совпадают со Swiss Ephemeris точнее 1′"
+    ],
+    "numbers": [
+      ["1–10", "баллы каждого дня, 7 сфер"],
+      ["10", "дел с лучшими днями"],
+      ["9", "типов карт в профи-режиме"],
+      ["<1′", "расхождение со Swiss Ephemeris"]
+    ]
+  }
+}
