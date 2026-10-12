@@ -33,6 +33,7 @@
   "en": {
     "tag": "Own product · music · 2026",
     "title": "Vocal Studio — a free singing app built to be found in search",
+    "link": "Open Vocal Studio",
     "lead": "A web app for singers and musicians: record and autotune your voice, sing along to any song with live pitch, warm up with a piano and tune 11 instruments. We built it the way we build client sites: every tool has its own page written for what people actually search, in two languages, so traffic comes from Google and Yandex rather than from ads.",
     "points": [
       "50 pages in English and Russian, each aimed at a real search: “guitar tuner online”, “vocal warm-ups”, “sing along to a backing track”",
@@ -51,6 +52,7 @@
   "ru": {
     "tag": "Свой продукт · музыка · 2026",
     "title": "Вокал-Студия — бесплатный сайт для пения, который находят через поиск",
+    "link": "Открыть Вокал-Студию",
     "lead": "Веб-приложение для вокалистов и музыкантов: запись и автотюн голоса, пение под любую песню с линией нот, распевки под рояль и тюнер для 11 инструментов. Сделано так же, как мы делаем сайты клиентам: у каждого инструмента своя страница под то, что люди реально ищут, на двух языках — посетители приходят из Google и Яндекса, а не из рекламы.",
     "points": [
       "50 страниц на русском и английском, каждая под реальный запрос: «тюнер для гитары онлайн», «распевки онлайн», «петь под минус»",
