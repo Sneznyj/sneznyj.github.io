@@ -220,7 +220,7 @@
   function booking() {
     const pr = UI.promoInfo();
     const promo = pr ? `<div class="promo-inline"><span class="sticker">−${pr.percent}%</span><span><b>${esc(pr.title)}</b><br><small>until ${fmt.MONTHS_GEN[pr.end.getMonth()]} ${pr.end.getDate()} — the discount applies automatically</small></span></div>` : '';
-    // анкета: сразу попадает в кабинет Алины (или уходит в Telegram), время она предлагает сама
+    // анкета: сразу попадает в кабинет Алики (или уходит в Telegram), время она предлагает сама
     $('bookingCard').innerHTML = promo + UI.bookingFormHTML('hb');
     UI.bindBooking($('bookingCard').querySelector('form'));
     const links = UI.contactLinks();

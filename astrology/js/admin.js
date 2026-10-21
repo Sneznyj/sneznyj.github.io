@@ -1,9 +1,9 @@
-/* Вход Алины и закрытый код сайта.
+/* Вход Алики и закрытый код сайта.
    Код кабинета лежит на сайте зашифрованным (js/locked/*, собирает _dev/lock.js): пароль превращается в ключ
    (PBKDF2-SHA256 → AES-256-GCM), ключ расшифровывает код прямо в браузере. Без пароля код не прочитать.
    “Запомнить на этом устройстве” хранит ключ (не пароль) в localStorage, иначе — до закрытия вкладки.
    Премиум-разделы (прогноз, подробная совместимость, полная натальная карта, нумерология-прогноз) зашифрованы
-   отдельным ключом доступа: Алине он достаётся из meta по её ключу (ей открыто всё), клиентам — из кода доступа (js/premium.js). */
+   отдельным ключом доступа: Алике он достаётся из meta по её ключу (ей открыто всё), клиентам — из кода доступа (js/premium.js). */
 (function () {
   'use strict';
   const STORE = 'am_adminKey';
@@ -56,9 +56,9 @@
     const url = URL.createObjectURL(new Blob([code + '\n//# sourceURL=locked/' + name + '.js'], { type: 'text/javascript' }));
     try { await loadScript(url); } catch (e) { new Function(code)(); } finally { URL.revokeObjectURL(url); }
   }
-  // ---------- премиум: ключ доступа и ключ подписи кодов — для Алины лежат в meta, зашифрованные её ключом ----------
+  // ---------- премиум: ключ доступа и ключ подписи кодов — для Алики лежат в meta, зашифрованные её ключом ----------
   const isPremium = (m, n) => !!(m.premium && (m.premium.names || []).includes(n));
-  /** Ключ премиум-разделов по входу Алины (или null). */
+  /** Ключ премиум-разделов по входу Алики (или null). */
   async function premiumKey() {
     if (cachedP) return cachedP;
     const k = await key();
@@ -68,7 +68,7 @@
     try { cachedP = await crypto.subtle.importKey('raw', b64d(await decrypt(k, m.premium.wrapK)), 'AES-GCM', false, ['decrypt']); } catch (e) { return null; }
     return cachedP;
   }
-  /** Ключ подписи кодов доступа — только у Алины (кабинет → “Доступы”). */
+  /** Ключ подписи кодов доступа — только у Алики (кабинет → “Доступы”). */
   async function signKey() {
     if (cachedS) return cachedS;
     const k = await key();
@@ -79,7 +79,7 @@
     cachedS = await crypto.subtle.importKey('jwk', jwk, { name: 'ECDSA', namedCurve: 'P-256' }, false, ['sign']);
     return cachedS;
   }
-  /** Ящик заявок и облако — только у Алины: адрес сервера, токен, закрытый ключ анкет, ключ облака (или null). */
+  /** Ящик заявок и облако — только у Алики: адрес сервера, токен, закрытый ключ анкет, ключ облака (или null). */
   async function api() {
     if (cachedA) return cachedA;
     const k = await key();
@@ -94,7 +94,7 @@
     } catch (e) { console.error(e); return null; }
     return cachedA;
   }
-  /** Ключ для раздела: премиум — у Алины или по коду доступа (js/premium.js), остальное — только у Алины. */
+  /** Ключ для раздела: премиум — у Алики или по коду доступа (js/premium.js), остальное — только у Алики. */
   async function keyFor(m, n) {
     if (!isPremium(m, n)) return key();
     return (await premiumKey()) || (window.Premium && window.Premium.contentKey ? await window.Premium.contentKey() : null);
@@ -165,7 +165,7 @@
 
   window.Admin = { has: () => !!stored(), key, login, logout, run, page, meta, decrypt, premiumKey, signKey, canCrypto, api };
 
-  // Алине на страницах сайта (не в кабинете): в ящике есть новые анкеты — тихая плашка “в кабинет”
+  // Алике на страницах сайта (не в кабинете): в ящике есть новые анкеты — тихая плашка “в кабинет”
   document.addEventListener('DOMContentLoaded', async () => {
     try {
       if (!stored() || /cabinet\.html$/.test(location.pathname) || window.ARTIFACT_PREVIEW) return;

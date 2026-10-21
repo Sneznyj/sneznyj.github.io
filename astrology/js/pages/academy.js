@@ -80,7 +80,7 @@
 
   document.addEventListener('DOMContentLoaded', () => {
     // обучение пока скрыто (content.js → academy.enabled: false): вместо уроков — короткая записка и запись на консультацию
-    // Алине (после входа в кабинет) курс открыт всегда — смотреть самой; посетителям — “скоро”
+    // Алике (после входа в кабинет) курс открыт всегда — смотреть самой; посетителям — “скоро”
     if (!UI.academyOn && !UI.isAlina()) {
       document.getElementById('main').innerHTML = `<section class="page-hero"><div class="container hero-anim"><span class="eyebrow">Learning</span><h1>Astrology lessons <em class="accent">coming soon</em></h1>
         <p class="lead">I’m preparing a course — the lessons will appear here once everything’s ready. In the meantime, you can book a personal reading.</p>

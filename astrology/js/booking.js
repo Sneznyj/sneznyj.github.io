@@ -1,5 +1,5 @@
-/* Свободное время Алины по её расписанию — только для кабинета (Заявки → “Предложить время”, Расписание).
-   Клиенты календаря не видят: они присылают анкету, а время Алина предлагает сама, уже по часам клиента.
+/* Свободное время Алики по её расписанию — только для кабинета (Заявки → “Предложить время”, Расписание).
+   Клиенты календаря не видят: они присылают анкету, а время Алика предлагает сама, уже по часам клиента.
    BookingCore — расчёт (без страницы, проверяется в Node: _dev/test_schedule.js), Booking — подписи для кабинета. */
 (function () {
   'use strict';
@@ -111,7 +111,7 @@
   }
   const isOff = (s, key) => offRanges(s).some(([a, b]) => key >= a && key <= b);
   const hasSpecial = (s, key) => !!s.special && Object.prototype.hasOwnProperty.call(s.special, key);
-  /** Рабочие промежутки Алины в дату key (по её поясу). */
+  /** Рабочие промежутки Алики в дату key (по её поясу). */
   function hoursFor(raw, key) {
     const s = raw && raw.__norm ? raw : norm(raw);
     if (isOff(s, key)) return [];
@@ -141,7 +141,7 @@
     return out;
   }
 
-  /** Свободные начала консультации длительностью duration минут: [{start, end, key, min}], key/min — по поясу Алины. */
+  /** Свободные начала консультации длительностью duration минут: [{start, end, key, min}], key/min — по поясу Алики. */
   function slots(raw, duration, opts) {
     opts = opts || {};
     duration = +duration || 0;

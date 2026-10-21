@@ -164,7 +164,7 @@
   const academyOn = !!(SITE.academy && SITE.academy.enabled !== false);
   // премиум-доступ (платные разделы по коду, js/premium.js): premium.enabled: false в content.js — ссылки не показываются
   const premOn = !!(SITE.premium && SITE.premium.enabled !== false);
-  // Алина вошла в кабинет на этом устройстве (ключ хранит js/admin.js) — показываем ей ссылки на кабинет
+  // Алика вошла в кабинет на этом устройстве (ключ хранит js/admin.js) — показываем ей ссылки на кабинет
   const isAlina = () => { try { return !!(localStorage.getItem('am_adminKey') || sessionStorage.getItem('am_adminKey')); } catch (e) { return false; } };
   const isPreview = location.protocol === 'file:' || /^(localhost|127\.|192\.168\.|\[::1\])/.test(location.hostname);
 
@@ -240,7 +240,7 @@
     return out;
   }
 
-  /** Ссылка на Telegram-бота Алины с меткой (start=src_site__natal и т. п.). Пусто, если бот не указан. */
+  /** Ссылка на Telegram-бота Алики с меткой (start=src_site__natal и т. п.). Пусто, если бот не указан. */
   function botHref(payload) {
     const b = (SITE.contacts || {}).telegramBot;
     return b ? `https://t.me/${b.replace(/^@/, '')}${payload ? '?start=' + payload : ''}` : '';
@@ -264,7 +264,7 @@
   function goal(name) { try { if (metrikaId && window.ym) window.ym(+metrikaId, 'reachGoal', name); } catch (e) { /* без аналитики */ } }
   document.addEventListener('click', (e) => { const a = e.target.closest && e.target.closest('a[href^="https://t.me/"]'); if (a) goal('telegram'); });
 
-  /** Записка от Алины с фото — для страниц-инструментов. */
+  /** Записка от Алики с фото — для страниц-инструментов. */
   function alinaNote(text, cta) {
     return `<div class="alina-note"><img src="${esc(SITE.avatar || 'assets/img/avatar.webp')}" alt="${esc(SITE.firstName || SITE.name)}" width="56" height="56" loading="lazy"><div class="bubble"><span class="note-who">${esc(SITE.firstName || SITE.name)}</span><p>${text}</p>${cta ? `<div class="row" style="gap:10px">${cta}</div>` : ''}</div></div>`;
   }
@@ -1200,7 +1200,7 @@
 
   // ---------- “Мои карты”: люди, чьи данные уже вводили ----------
   // Хранятся только в этом браузере (am_people). Формы данных рождения предлагают их одним нажатием и (если стоит
-  // галочка “Сохранить в Мои карты”) запоминают новых. Алине на страницах сайта — ещё и клиенты кабинета.
+  // галочка “Сохранить в Мои карты”) запоминают новых. Алике на страницах сайта — ещё и клиенты кабинета.
   const PKEY = (b) => [b.y, b.mo, b.d, b.timeKnown === false ? '-' : `${+b.h}:${+b.mi}`, (+b.lat).toFixed(2), (+b.lon).toFixed(2)].join('|');
   const birthOf = (p) => ({ y: +p.y, mo: +p.mo, d: +p.d, h: p.timeKnown === false ? 12 : +p.h, mi: p.timeKnown === false ? 0 : +p.mi, timeKnown: p.timeKnown !== false, lat: +p.lat, lon: +p.lon, zone: p.zone, place: p.place || '' });
   const pid = () => 'p' + Date.now().toString(36) + Math.random().toString(36).slice(2, 6);
@@ -1243,7 +1243,7 @@
     /** Данные для формы: { name, y, mo, d, h, mi, timeKnown, lat, lon, zone, place }. */
     params: (p) => Object.assign({ name: p.name || '' }, p.birth),
   };
-  /** Кого предложить: “Мои карты” (свежие сверху) и — Алине — клиенты кабинета. */
+  /** Кого предложить: “Мои карты” (свежие сверху) и — Алике — клиенты кабинета. */
   function pickList(opts) {
     opts = opts || {};
     const out = people.all().filter((p) => p.birth && p.birth.y).sort((a, b) => String(b.used || b.updated || '').localeCompare(String(a.used || a.updated || ''))).map((p) => ({ key: 'p:' + p.id, group: 'My charts', name: people.label(p), p: people.params(p), fullName: p.fullName || '', person: p }));
@@ -1303,11 +1303,11 @@
   }
 
   // ---------- анкета на консультацию ----------
-  // Календаря для клиентов нет: клиент заполняет анкету, она шифруется и сразу попадает в кабинет Алины (ящик заявок,
-  // content.js → api.url); если сервер недоступен — уходит Алине в Telegram готовым сообщением
-  // (или в WhatsApp, на почту). Алина отвечает сама, уточняет детали и предлагает время из кабинета (“Заявки”).
+  // Календаря для клиентов нет: клиент заполняет анкету, она шифруется и сразу попадает в кабинет Алики (ящик заявок,
+  // content.js → api.url); если сервер недоступен — уходит Алике в Telegram готовым сообщением
+  // (или в WhatsApp, на почту). Алика отвечает сама, уточняет детали и предлагает время из кабинета (“Заявки”).
   const INTAKE = SITE.intake || {};
-  // ящик заявок (content.js → api.url): анкета шифруется в браузере и сразу попадает в кабинет Алины.
+  // ящик заявок (content.js → api.url): анкета шифруется в браузере и сразу попадает в кабинет Алики.
   // Копия сайта на компьютере разработки и превью не пишут в боевой ящик (только в локальный сервер для проверок).
   const localApi = (u) => /^https?:\/\/(localhost|127\.|\[::1\])/.test(String(u || '')) || !!(window.DemoApi && String(u || '').replace(/\/+$/, '') === window.DemoApi.base);
   const inboxOn = !!(SITE.api && SITE.api.url && window.crypto && crypto.subtle && window.fetch && ((!isPreview && !window.ARTIFACT_PREVIEW) || localApi(SITE.api.url)));
@@ -1340,7 +1340,7 @@
     const what = svc ? esc(svc.duration || '') : id === 'gift' ? 'a beautiful certificate for any reading' : id === 'numerology' ? 'your numbers from your date of birth and name' : id === 'energy' ? `${(SITE.energy && SITE.energy.duration) || 30} minutes online · pay by donation · <a href="energy.html">details and time slots</a>` : '';
     return what || price ? `${icon('info')}<span>${what}${what && price ? ' · ' : ''}${price}</span>` : '';
   }
-  /** Какие данные рождения нужны для услуги: 'full' — дата, время (или “не знаю”) и город обязательны: по ним Алина сразу
+  /** Какие данные рождения нужны для услуги: 'full' — дата, время (или “не знаю”) и город обязательны: по ним Алика сразу
       видит карту человека; 'optional' — по желанию; 'none' — не нужны. content.js → intake.services[id].birth;
       по умолчанию — 'full' для консультаций, 'optional' для экспресс-ответа, уроков и “другого”, 'none' для сертификата,
       курса и энергетического выравнивания. */
@@ -1598,8 +1598,8 @@
       <li>I’ll read your form and reply ${esc(INTAKE.replyTime || 'within a day')}.</li>
       <li>If needed, I’ll check a couple of details — it makes the reading more precise.</li>
       <li>I’ll suggest times in your time zone and send the payment details.</li></ol>`;
-  /** Анкета уже в кабинете Алины: спокойно рассказываем, что дальше; написать в Telegram — по желанию. */
-  /** Отправить заявку со своей формы (например, “Энергетическая работа”): в ящик Алины, иначе — окно мессенджеров.
+  /** Анкета уже в кабинете Алики: спокойно рассказываем, что дальше; написать в Telegram — по желанию. */
+  /** Отправить заявку со своей формы (например, “Энергетическая работа”): в ящик Алики, иначе — окно мессенджеров.
       o: { data, text, hp, when } — when: строка “Предварительно: …” для окна благодарности. */
   async function submitIntake(o) {
     if (inboxOn) {
