@@ -1,5 +1,5 @@
 {
-  "_comment": "Кейс «Saliastro» для лендинга Nevaro Studio (21.10.2026, раньше — Natalogy в cases/natalogy). Свой продукт, открыт всем с 19.10.2026 на saliastro.com. Цифры — проверенные факты на 21.10: 7 сфер и 10 дел, 9 типов карт в профи, сверка со Swiss Ephemeris точнее 1′, 34 страницы под поиск (sitemap.xml без главной, app, download, privacy, terms), 4 тарифа (Бесплатно/Плюс/Профи/VIP), 7 дней пробного, входы по /health сервера (google, yandex, telegram, email, passkey, emailcode). Снимки — вымышленные Mia (EN) и Анна (RU): node _dev/case_shots.js в исходниках Saliastro (уведомление о политике на снимках скрыть ключом saliastro:policy). order — место среди работ: 10 = первым, до Алины (20).",
+  "_comment": "Кейс «Saliastro» для лендинга Nevaro Studio (21.10.2026, раньше — Natalogy в cases/natalogy). Свой продукт, открыт всем с 19.10.2026 на saliastro.com. Цифры — проверенные факты на 21.10: 7 сфер и 10 дел, 9 типов карт в профи, сверка со Swiss Ephemeris точнее 1′, 34 страницы под поиск (sitemap.xml без главной, app, download, privacy, terms), 4 тарифа (Бесплатно/Плюс/Профи/VIP), 7 дней пробного, входы по /health сервера (google, yandex, telegram, email, passkey, emailcode). Снимки — вымышленные Mia (EN) и Анна (RU): node _dev/case_shots.js в исходниках Saliastro (уведомление о политике на снимках скрыть ключом saliastro:policy). order — место среди работ: 10 = первым, до Алины (20). Видео-превью preview-<язык>.mp4 записывает node landing/_dev/videos.js saliastro; ролики reels/ — из «Claude Проекты\\Saliastro\\Продвижение\\Видео» (версии с музыкой, без голоса), пережаты в 720p/1280×720 H.264.",
   "order": 10,
   "url": "https://saliastro.com/",
   "logo": "logo.webp",
@@ -74,7 +74,40 @@
         "<1′",
         "difference from Swiss Ephemeris"
       ]
-    ]
+    ],
+    "more": [
+      [
+        "For people who don’t know astrology",
+        [
+          "A horoscope for the day, week, month and year, plus a personal day summary: what goes well and what to postpone",
+          "A calendar where every day has a 1–10 score and a name — “Thrifty”, “Career”, “Stillness”; filters by life area and icons for beauty, sport and rest",
+          "A birth chart in plain words: the essentials, life areas, strengths; tap a planet for its reading",
+          "“Pair”: compatibility by area and a shareable card for Telegram, WhatsApp and VK",
+          "Numerology, today’s sky and Moon, larger text on request, light and dark themes"
+        ]
+      ],
+      [
+        "For astrologers: Pro and VIP",
+        [
+          "9 chart types: natal, transits, solar return, lunar return, directions, progressions, synastry, composite, horary",
+          "Two independent charts side by side, a time machine down to the second, a wheel you can turn with the mouse",
+          "Firdaria with sub-periods, dispositors, astrocartography on a world map with cities near the lines",
+          "Birth-time rectification from life events, with an honest randomness check"
+        ]
+      ],
+      [
+        "How it’s built",
+        [
+          "Calculations run on the device: fast, and they work even offline",
+          "Its own server and its own sign-in server: Google, Yandex, Telegram, email code, passkey",
+          "Subscriptions through lava.top in ₽, $ and €; a 7-day trial; “Invite a friend” gives both a week of Plus",
+          "34 search pages update themselves and are submitted to Yandex and Bing via IndexNow; Metrica and in-house stats without names or birth dates",
+          "A Telegram bot and the @saliastro_tg channel with a morning horoscope; Reels and Shorts videos are below"
+        ]
+      ]
+    ],
+    "reels_h": "Videos for social media",
+    "reels_note": "Also our work: a promo, a reel and shorts about each section. In Russian — the product’s main audience; press ▶ for sound."
   },
   "ru": {
     "tag": "Свой продукт · астрология · открыт с октября 2026",
@@ -105,7 +138,40 @@
         "<1′",
         "расхождение со Swiss Ephemeris"
       ]
-    ]
+    ],
+    "more": [
+      [
+        "Для тех, кто не знает астрологию",
+        [
+          "Гороскоп на день, неделю, месяц и год и личный разбор дня: что пойдёт хорошо, а что лучше отложить",
+          "Календарь: у каждого дня балл 1–10 и название — «Без трат», «Карьера», «Тише»; фильтры по сферам, значки красоты, спорта и отдыха",
+          "Натальная карта простым языком: «Главное о тебе», сферы жизни, сильные стороны; нажал на планету — толкование",
+          "«Пара»: совместимость по сферам и красивая картинка, которой делятся в Telegram, WhatsApp и ВК",
+          "Нумерология, небо и Луна сегодня, крупный текст по желанию, светлая и тёмная тема"
+        ]
+      ],
+      [
+        "Для астрологов: Профи и VIP",
+        [
+          "9 типов карт: натал, транзиты, соляр, лунар, дирекции, прогрессии, синастрия, композит, хорар",
+          "Две независимые карты рядом, машина времени до секунды, колесо карты крутится мышью",
+          "Фирдарии с подпериодами, диспозиторы, астрокартография на карте мира с городами у линий",
+          "Ректификация времени рождения по событиям жизни — с честной проверкой на случайность"
+        ]
+      ],
+      [
+        "Как устроено",
+        [
+          "Расчёты идут прямо на устройстве: быстро и даже без интернета",
+          "Свой сервер и свой сервер входа: Google, Яндекс, Telegram, код на почту, ключ доступа",
+          "Подписки через lava.top в ₽, $ и €; 7 дней пробного периода; «Приведи друга» — неделя «Плюса» обоим",
+          "34 страницы под поиск обновляются сами и уходят в Яндекс и Bing через IndexNow; Метрика и своя статистика без имён и дат рождения",
+          "Telegram-бот и канал @saliastro_tg с утренним гороскопом; ролики для Reels и Shorts — ниже"
+        ]
+      ]
+    ],
+    "reels_h": "Ролики для соцсетей",
+    "reels_note": "Тоже наша работа: промо-ролик, рилс и шортсы по разделам. Нажмите ▶ — со звуком."
   },
   "de": {
     "tag": "Eigenes Produkt · Astrologie · live seit Oktober 2026",
@@ -136,7 +202,40 @@
         "<1′",
         "Abweichung von Swiss Ephemeris"
       ]
-    ]
+    ],
+    "more": [
+      [
+        "Für alle ohne Astrologie-Kenntnisse",
+        [
+          "Horoskop für Tag, Woche, Monat und Jahr und dazu eine persönliche Tagesübersicht: was gut läuft und was besser wartet",
+          "Ein Kalender, in dem jeder Tag eine Note von 1 bis 10 und einen Namen hat — „Sparsam“, „Karriere“, „Stille“; Filter nach Lebensbereichen, Symbole für Schönheit, Sport und Erholung",
+          "Das Geburtshoroskop in einfachen Worten: das Wichtigste, Lebensbereiche, Stärken; ein Klick auf einen Planeten zeigt die Deutung",
+          "„Paar“: Kompatibilität nach Bereichen und eine Karte zum Teilen in Telegram, WhatsApp und VK",
+          "Numerologie, Himmel und Mond heute, auf Wunsch größere Schrift, helles und dunkles Design"
+        ]
+      ],
+      [
+        "Für Astrologen: Pro und VIP",
+        [
+          "9 Horoskoparten: Radix, Transite, Solar, Lunar, Direktionen, Progressionen, Synastrie, Composit, Stundenhoroskop",
+          "Zwei unabhängige Horoskope nebeneinander, Zeitmaschine bis auf die Sekunde, das Rad lässt sich mit der Maus drehen",
+          "Firdarien mit Unterperioden, Dispositoren, Astrokartografie auf einer Weltkarte mit Städten an den Linien",
+          "Geburtszeitkorrektur anhand von Lebensereignissen — mit ehrlicher Zufallsprüfung"
+        ]
+      ],
+      [
+        "So ist es gebaut",
+        [
+          "Die Berechnungen laufen auf dem Gerät: schnell und sogar offline",
+          "Eigener Server und eigener Anmeldeserver: Google, Yandex, Telegram, E-Mail-Code, Passkey",
+          "Abos über lava.top in ₽, $ und €; 7 Tage Probezeit; „Freunde einladen“ schenkt beiden eine Woche Plus",
+          "34 Suchseiten aktualisieren sich selbst und gehen per IndexNow an Yandex und Bing; Metrica und eigene Statistik ohne Namen und Geburtsdaten",
+          "Telegram-Bot und Kanal @saliastro_tg mit Morgenhoroskop; Reels- und Shorts-Videos weiter unten"
+        ]
+      ]
+    ],
+    "reels_h": "Videos für Social Media",
+    "reels_note": "Auch unsere Arbeit: Promo, Reel und Shorts zu den einzelnen Bereichen. Auf Russisch — für die Hauptzielgruppe des Produkts; ▶ drücken für Ton."
   },
   "es": {
     "tag": "Producto propio · astrología · en marcha desde octubre de 2026",
@@ -167,7 +266,40 @@
         "<1′",
         "diferencia con Swiss Ephemeris"
       ]
-    ]
+    ],
+    "more": [
+      [
+        "Para quien no sabe astrología",
+        [
+          "Horóscopo del día, la semana, el mes y el año, y un resumen personal del día: qué sale bien y qué conviene aplazar",
+          "Un calendario donde cada día tiene una nota del 1 al 10 y un nombre — «Ahorro», «Carrera», «Calma»; filtros por áreas e iconos de belleza, deporte y descanso",
+          "La carta natal en palabras sencillas: lo esencial, las áreas de la vida, los puntos fuertes; al tocar un planeta, su interpretación",
+          "«Pareja»: compatibilidad por áreas y una tarjeta para compartir en Telegram, WhatsApp y VK",
+          "Numerología, el cielo y la Luna de hoy, letra más grande si se desea, tema claro y oscuro"
+        ]
+      ],
+      [
+        "Para astrólogos: Pro y VIP",
+        [
+          "9 tipos de carta: natal, tránsitos, revolución solar, revolución lunar, direcciones, progresiones, sinastría, compuesta, horaria",
+          "Dos cartas independientes lado a lado, máquina del tiempo al segundo, una rueda que se gira con el ratón",
+          "Firdarias con subperiodos, dispositores, astrocartografía en un mapa del mundo con ciudades cerca de las líneas",
+          "Rectificación de la hora de nacimiento por sucesos de la vida, con una prueba honesta de azar"
+        ]
+      ],
+      [
+        "Cómo está hecho",
+        [
+          "Los cálculos se hacen en el dispositivo: rápido e incluso sin conexión",
+          "Servidor propio y servidor de acceso propio: Google, Yandex, Telegram, código por correo, llave de acceso",
+          "Suscripciones con lava.top en ₽, $ y €; 7 días de prueba; «Invita a un amigo» regala a ambos una semana de Plus",
+          "34 páginas para buscadores se actualizan solas y se envían a Yandex y Bing por IndexNow; Metrica y estadística propia sin nombres ni fechas de nacimiento",
+          "Bot y canal de Telegram @saliastro_tg con horóscopo matinal; vídeos para Reels y Shorts más abajo"
+        ]
+      ]
+    ],
+    "reels_h": "Vídeos para redes sociales",
+    "reels_note": "También es trabajo nuestro: un promo, un reel y shorts sobre cada sección. En ruso — el público principal del producto; pulsa ▶ para el sonido."
   },
   "fr": {
     "tag": "Produit maison · astrologie · en ligne depuis octobre 2026",
@@ -198,7 +330,40 @@
         "<1′",
         "écart avec Swiss Ephemeris"
       ]
-    ]
+    ],
+    "more": [
+      [
+        "Pour celles et ceux qui ne connaissent pas l’astrologie",
+        [
+          "Horoscope du jour, de la semaine, du mois et de l’année, plus un résumé personnel de la journée : ce qui marche bien et ce qu’il vaut mieux remettre",
+          "Un calendrier où chaque jour a une note de 1 à 10 et un nom — « Économe », « Carrière », « Calme » ; filtres par domaine et icônes beauté, sport et repos",
+          "Le thème natal en mots simples : l’essentiel, les domaines de vie, les points forts ; un clic sur une planète affiche son interprétation",
+          "« Couple » : compatibilité par domaine et une carte à partager sur Telegram, WhatsApp et VK",
+          "Numérologie, ciel et Lune du jour, texte plus grand au besoin, thème clair et sombre"
+        ]
+      ],
+      [
+        "Pour les astrologues : Pro et VIP",
+        [
+          "9 types de thèmes : natal, transits, révolution solaire, révolution lunaire, directions, progressions, synastrie, composite, horaire",
+          "Deux thèmes indépendants côte à côte, une machine à remonter le temps à la seconde près, une roue qui tourne à la souris",
+          "Firdarias avec sous-périodes, dispositeurs, astrocartographie sur une carte du monde avec les villes proches des lignes",
+          "Rectification de l’heure de naissance d’après les événements de vie, avec un vrai test contre le hasard"
+        ]
+      ],
+      [
+        "Comment c’est construit",
+        [
+          "Les calculs se font sur l’appareil : rapides, et même hors ligne",
+          "Serveur dédié et serveur de connexion dédié : Google, Yandex, Telegram, code par e-mail, clé d’accès",
+          "Abonnements via lava.top en ₽, $ et € ; 7 jours d’essai ; « Inviter un ami » offre une semaine de Plus aux deux",
+          "34 pages pour la recherche se mettent à jour seules et partent vers Yandex et Bing via IndexNow ; Metrica et statistiques maison sans noms ni dates de naissance",
+          "Bot et chaîne Telegram @saliastro_tg avec l’horoscope du matin ; vidéos Reels et Shorts ci-dessous"
+        ]
+      ]
+    ],
+    "reels_h": "Vidéos pour les réseaux sociaux",
+    "reels_note": "C’est aussi notre travail : un promo, un reel et des shorts sur chaque rubrique. En russe — le public principal du produit ; appuyez sur ▶ pour le son."
   },
   "it": {
     "tag": "Prodotto nostro · astrologia · online da ottobre 2026",
@@ -229,7 +394,40 @@
         "<1′",
         "scarto da Swiss Ephemeris"
       ]
-    ]
+    ],
+    "more": [
+      [
+        "Per chi non conosce l’astrologia",
+        [
+          "Oroscopo del giorno, della settimana, del mese e dell’anno, più un riepilogo personale della giornata: cosa va bene e cosa conviene rimandare",
+          "Un calendario in cui ogni giorno ha un voto da 1 a 10 e un nome — «Risparmio», «Carriera», «Quiete»; filtri per area e icone per bellezza, sport e riposo",
+          "Il tema natale in parole semplici: l’essenziale, le aree della vita, i punti di forza; un clic su un pianeta mostra l’interpretazione",
+          "«Coppia»: compatibilità per aree e una card da condividere su Telegram, WhatsApp e VK",
+          "Numerologia, cielo e Luna di oggi, testo più grande a richiesta, tema chiaro e scuro"
+        ]
+      ],
+      [
+        "Per gli astrologi: Pro e VIP",
+        [
+          "9 tipi di tema: natale, transiti, rivoluzione solare, rivoluzione lunare, direzioni, progressioni, sinastria, composito, oraria",
+          "Due temi indipendenti affiancati, macchina del tempo al secondo, una ruota che si gira con il mouse",
+          "Firdarie con sottoperiodi, dispositori, astrocartografia su una mappa del mondo con le città vicine alle linee",
+          "Rettifica dell’ora di nascita in base agli eventi della vita, con un onesto controllo sul caso"
+        ]
+      ],
+      [
+        "Come è fatto",
+        [
+          "I calcoli avvengono sul dispositivo: veloci, anche offline",
+          "Server proprio e server di accesso proprio: Google, Yandex, Telegram, codice via email, passkey",
+          "Abbonamenti tramite lava.top in ₽, $ ed €; 7 giorni di prova; «Invita un amico» regala a entrambi una settimana di Plus",
+          "34 pagine per la ricerca si aggiornano da sole e vengono inviate a Yandex e Bing via IndexNow; Metrica e statistiche proprie senza nomi né date di nascita",
+          "Bot e canale Telegram @saliastro_tg con l’oroscopo del mattino; i video per Reels e Shorts sono qui sotto"
+        ]
+      ]
+    ],
+    "reels_h": "Video per i social",
+    "reels_note": "Anche questo è lavoro nostro: un promo, un reel e degli shorts sulle varie sezioni. In russo — il pubblico principale del prodotto; premi ▶ per l’audio."
   },
   "pt": {
     "tag": "Produto próprio · astrologia · no ar desde outubro de 2026",
@@ -260,7 +458,40 @@
         "<1′",
         "diferença face ao Swiss Ephemeris"
       ]
-    ]
+    ],
+    "more": [
+      [
+        "Para quem não sabe astrologia",
+        [
+          "Horóscopo do dia, da semana, do mês e do ano, e um resumo pessoal do dia: o que corre bem e o que é melhor adiar",
+          "Um calendário em que cada dia tem nota de 1 a 10 e um nome — «Poupança», «Carreira», «Calma»; filtros por área e ícones de beleza, desporto e descanso",
+          "O mapa astral em palavras simples: o essencial, as áreas da vida, os pontos fortes; tocar num planeta mostra a interpretação",
+          "«Par»: compatibilidade por áreas e um cartão para partilhar no Telegram, WhatsApp e VK",
+          "Numerologia, céu e Lua de hoje, letra maior se quiser, tema claro e escuro"
+        ]
+      ],
+      [
+        "Para astrólogos: Pro e VIP",
+        [
+          "9 tipos de mapa: natal, trânsitos, revolução solar, revolução lunar, direções, progressões, sinastria, composto, horária",
+          "Dois mapas independentes lado a lado, máquina do tempo ao segundo, uma roda que se roda com o rato",
+          "Firdárias com subperíodos, dispositores, astrocartografia num mapa-múndi com as cidades junto às linhas",
+          "Retificação da hora de nascimento a partir de acontecimentos da vida, com um teste honesto contra o acaso"
+        ]
+      ],
+      [
+        "Como está feito",
+        [
+          "Os cálculos correm no dispositivo: rápidos e até sem internet",
+          "Servidor próprio e servidor de entrada próprio: Google, Yandex, Telegram, código por e-mail, chave de acesso",
+          "Subscrições pela lava.top em ₽, $ e €; 7 dias de experiência; «Convidar um amigo» dá uma semana de Plus a ambos",
+          "34 páginas para a pesquisa atualizam-se sozinhas e são enviadas ao Yandex e ao Bing via IndexNow; Metrica e estatísticas próprias sem nomes nem datas de nascimento",
+          "Bot e canal de Telegram @saliastro_tg com o horóscopo da manhã; vídeos para Reels e Shorts mais abaixo"
+        ]
+      ]
+    ],
+    "reels_h": "Vídeos para redes sociais",
+    "reels_note": "Também é trabalho nosso: um promo, um reel e shorts sobre cada secção. Em russo — o público principal do produto; carregue em ▶ para ouvir."
   },
   "tr": {
     "tag": "Kendi ürünümüz · astroloji · Ekim 2026’dan beri yayında",
@@ -291,6 +522,172 @@
         "<1′",
         "Swiss Ephemeris’ten sapma"
       ]
+    ],
+    "more": [
+      [
+        "Astroloji bilmeyenler için",
+        [
+          "Günlük, haftalık, aylık ve yıllık burç yorumu, ayrıca kişisel gün özeti: neler iyi gider, neyi ertelemek daha iyi",
+          "Her günün 1–10 puanı ve adı olan bir takvim — “Tasarruf”, “Kariyer”, “Sükûnet”; alanlara göre filtreler, güzellik, spor ve dinlenme simgeleri",
+          "Sade dille doğum haritası: en önemlisi, yaşam alanları, güçlü yanlar; bir gezegene dokunun, yorumu açılsın",
+          "“Çift”: alanlara göre uyum ve Telegram, WhatsApp ve VK’da paylaşılacak bir kart",
+          "Numeroloji, bugünün gökyüzü ve Ay’ı, istenirse büyük yazı, açık ve koyu tema"
+        ]
+      ],
+      [
+        "Astrologlar için: Pro ve VIP",
+        [
+          "9 harita türü: doğum, transitler, güneş dönüşü, ay dönüşü, direksiyonlar, progresyonlar, sinastri, kompozit, horary",
+          "Yan yana iki bağımsız harita, saniyesine kadar zaman makinesi, fareyle döndürülen harita çarkı",
+          "Alt dönemleriyle firdarlar, dispozitörler, çizgilere yakın şehirlerle dünya haritasında astrokartografi",
+          "Yaşam olaylarına göre doğum saati düzeltmesi — dürüst bir rastlantı testiyle"
+        ]
+      ],
+      [
+        "Nasıl yapıldı",
+        [
+          "Hesaplar cihazda yapılır: hızlıdır, internetsiz de çalışır",
+          "Kendi sunucusu ve kendi giriş sunucusu: Google, Yandex, Telegram, e-posta kodu, geçiş anahtarı",
+          "lava.top üzerinden ₽, $ ve € ile abonelik; 7 günlük deneme; “Arkadaşını davet et” ikisine de bir hafta Plus verir",
+          "Arama için 34 sayfa kendiliğinden güncellenir ve IndexNow ile Yandex ve Bing’e gönderilir; isim ve doğum tarihi olmadan Metrica ve kendi istatistiğimiz",
+          "Sabah burç yorumu paylaşan Telegram botu ve @saliastro_tg kanalı; Reels ve Shorts videoları aşağıda"
+        ]
+      ]
+    ],
+    "reels_h": "Sosyal medya videoları",
+    "reels_note": "Bunlar da bizim işimiz: bir tanıtım, bir reel ve her bölüm için shorts. Rusça — ürünün ana kitlesi için; ses için ▶ düğmesine basın."
+  },
+  "video": "preview-en.mp4",
+  "video_ru": "preview-ru.mp4",
+  "links": [
+    [
+      "bot",
+      "https://t.me/saliastro_bot"
+    ],
+    [
+      "channel",
+      "https://t.me/saliastro_tg"
     ]
-  }
+  ],
+  "reels": [
+    {
+      "file": "reels/promo.mp4",
+      "poster": "reels/promo.webp",
+      "w": 1280,
+      "h": 720,
+      "dur": "0:37",
+      "t": {
+        "en": "Promo",
+        "ru": "Промо-ролик",
+        "de": "Promo",
+        "es": "Promo",
+        "fr": "Promo",
+        "it": "Promo",
+        "pt": "Promo",
+        "tr": "Tanıtım"
+      }
+    },
+    {
+      "file": "reels/reel.mp4",
+      "poster": "reels/reel.webp",
+      "w": 720,
+      "h": 1280,
+      "dur": "0:15",
+      "t": {
+        "en": "Reel “The site up close”",
+        "ru": "Рилс «Сайт крупно»",
+        "de": "Reel „Die Website ganz nah“",
+        "es": "Reel «La web de cerca»",
+        "fr": "Reel « Le site de près »",
+        "it": "Reel «Il sito da vicino»",
+        "pt": "Reel «O site de perto»",
+        "tr": "Reel “Site yakından”"
+      }
+    },
+    {
+      "file": "reels/short-1.mp4",
+      "poster": "reels/short-1.webp",
+      "w": 720,
+      "h": 1280,
+      "dur": "0:26",
+      "t": {
+        "en": "Horoscope",
+        "ru": "Гороскоп",
+        "de": "Horoskop",
+        "es": "Horóscopo",
+        "fr": "Horoscope",
+        "it": "Oroscopo",
+        "pt": "Horóscopo",
+        "tr": "Burç yorumu"
+      }
+    },
+    {
+      "file": "reels/short-2.mp4",
+      "poster": "reels/short-2.webp",
+      "w": 720,
+      "h": 1280,
+      "dur": "0:26",
+      "t": {
+        "en": "Birth chart",
+        "ru": "Натальная карта",
+        "de": "Geburtshoroskop",
+        "es": "Carta natal",
+        "fr": "Thème natal",
+        "it": "Tema natale",
+        "pt": "Mapa astral",
+        "tr": "Doğum haritası"
+      }
+    },
+    {
+      "file": "reels/short-3.mp4",
+      "poster": "reels/short-3.webp",
+      "w": 720,
+      "h": 1280,
+      "dur": "0:26",
+      "t": {
+        "en": "Compatibility",
+        "ru": "Совместимость",
+        "de": "Partnerschaft",
+        "es": "Compatibilidad",
+        "fr": "Compatibilité",
+        "it": "Compatibilità",
+        "pt": "Compatibilidade",
+        "tr": "Uyum"
+      }
+    },
+    {
+      "file": "reels/short-4.mp4",
+      "poster": "reels/short-4.webp",
+      "w": 720,
+      "h": 1280,
+      "dur": "0:26",
+      "t": {
+        "en": "Calendar",
+        "ru": "Календарь",
+        "de": "Kalender",
+        "es": "Calendario",
+        "fr": "Calendrier",
+        "it": "Calendario",
+        "pt": "Calendário",
+        "tr": "Takvim"
+      }
+    },
+    {
+      "file": "reels/short-5.mp4",
+      "poster": "reels/short-5.webp",
+      "w": 720,
+      "h": 1280,
+      "dur": "0:26",
+      "t": {
+        "en": "Numerology",
+        "ru": "Нумерология",
+        "de": "Numerologie",
+        "es": "Numerología",
+        "fr": "Numérologie",
+        "it": "Numerologia",
+        "pt": "Numerologia",
+        "tr": "Numeroloji"
+      }
+    }
+  ]
 }

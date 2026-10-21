@@ -169,18 +169,51 @@ code { font: 500 .88em var(--ff-mono); background: var(--bg-2); padding: 2px 6px
 .ticks { list-style: none; padding: 0; margin: 0 0 22px; }
 .ticks li { position: relative; padding-left: 24px; margin-bottom: 10px; color: var(--ink-2); }
 .ticks li::before { content: ''; position: absolute; left: 0; top: .62em; width: 12px; height: 2px; background: var(--accent); }
-.case-media { position: relative; margin: 0; padding-bottom: 40px; }
 .case-logo { width: 44px; height: 44px; border-radius: 10px; }
 .nums { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0; margin: 0 0 22px; border-top: 1px solid var(--line-2); }
 .num { padding: 14px 14px 12px 0; border-bottom: 1px solid var(--line-2); display: grid; gap: 2px; }
 .num:nth-child(2n) { padding-left: 14px; border-left: 1px solid var(--line); }
 .num b { font: 600 1.9rem/1 var(--ff); letter-spacing: -0.03em; font-variant-numeric: tabular-nums; }
 .num span { font-size: .86rem; color: var(--ink-2); }
-.case-media img { border-radius: 8px; border: 1px solid var(--line-2); box-shadow: var(--shadow); background: var(--surface); }
-.case-media .m-main { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: top; }
-.case-media .m-sub { width: 58%; aspect-ratio: 16 / 10; object-fit: cover; object-position: top; margin: -18% 0 0 auto; position: relative; }
-.case-media .m-phone { position: absolute; left: 4%; bottom: 0; width: 24%; aspect-ratio: 9 / 19; object-fit: cover; object-position: top; border-radius: 14px; }
-.case-media figcaption { margin-top: 14px; font-size: .8rem; color: var(--ink-3); text-align: right; }
+/* медиа работы: видео-превью сверху, под ним миниатюры снимков (открываются целиком) */
+.case-media { position: relative; margin: 0; display: grid; gap: 14px; align-content: start; min-width: 0; }
+.vid { position: relative; aspect-ratio: 16 / 10; border-radius: 10px; overflow: hidden; border: 1px solid var(--line-2); box-shadow: var(--shadow); background: var(--surface); }
+.vid video { display: block; width: 100%; height: 100%; object-fit: cover; object-position: top; }
+.vid-btn { position: absolute; left: 12px; bottom: 12px; width: 40px; height: 40px; border: 0; border-radius: 50%; display: grid; place-items: center; background: rgba(18, 19, 19, .74); color: #fff; cursor: pointer; transition: background .2s, width .2s, height .2s; }
+.vid-btn:hover { background: rgba(18, 19, 19, .92); }
+.vid-btn span { width: 12px; height: 14px; border-left: 4px solid currentColor; border-right: 4px solid currentColor; }
+.vid.paused .vid-btn { width: 64px; height: 64px; left: calc(50% - 32px); bottom: calc(50% - 32px); background: rgba(18, 19, 19, .66); box-shadow: 0 10px 30px -10px rgba(0, 0, 0, .6); }
+.vid.paused .vid-btn span { width: 0; height: 0; margin-left: 5px; border-style: solid; border-width: 11px 0 11px 18px; border-color: transparent transparent transparent currentColor; }
+.thumbs { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); gap: 12px; align-items: start; }
+.thumbs:has(.thumb-phone) { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, .29fr); grid-auto-flow: row; }
+.thumb { display: block; border-radius: 8px; overflow: hidden; border: 1px solid var(--line-2); background: var(--surface); transition: transform .2s, box-shadow .2s; }
+.thumb:hover { transform: translateY(-2px); box-shadow: 0 14px 26px -18px rgba(18, 19, 19, .6); }
+.thumb img { display: block; width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: top; }
+.thumb-phone img { aspect-ratio: 9 / 19.5; }
+.case-media figcaption { font-size: .8rem; color: var(--ink-3); text-align: right; }
+@media (min-width: 901px) { .case-media { position: sticky; top: 88px; } }
+/* подробности под работой: колонки на всю ширину */
+.case-more { grid-column: 1 / -1; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 10px 36px; padding-top: 26px; border-top: 1px solid var(--line); }
+.case-more h4 { margin: 0 0 12px; font: 500 .72rem/1.4 var(--ff-mono); letter-spacing: .12em; text-transform: uppercase; color: var(--accent); }
+.case-more .ticks { margin: 0; }
+.case-more .ticks li { margin-bottom: 8px; font-size: .93rem; }
+.case-links { display: flex; flex-wrap: wrap; gap: 6px 20px; margin: 14px 0 0; font-size: .92rem; }
+.case-links a { font-weight: 600; text-decoration: none; }
+.case-links a:hover { text-decoration: underline; }
+.case-links a span { margin-left: 4px; }
+/* ролики для соцсетей (Saliastro): лента, листается вбок */
+.reels { grid-column: 1 / -1; min-width: 0; padding-top: 26px; border-top: 1px solid var(--line); }
+.reels-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 18px; margin-bottom: 14px; }
+.reels-head h4 { margin: 0; font: 600 1.15rem/1.2 var(--ff); letter-spacing: -0.01em; }
+.reels-head p { margin: 0; }
+.reels-row { display: flex; gap: 14px; overflow-x: auto; padding-bottom: 10px; scroll-snap-type: x proximity; overscroll-behavior-x: contain; }
+.reel { flex: none; width: 200px; margin: 0; scroll-snap-align: start; }
+.reel-wide { width: min(632px, 86vw); }
+.reel video { display: block; width: 100%; height: auto; aspect-ratio: 9 / 16; border-radius: 10px; border: 1px solid var(--line-2); background: #111; }
+.reel-wide video { aspect-ratio: 16 / 9; }
+.reel figcaption { margin-top: 8px; font-size: .84rem; color: var(--ink-2); }
+.reel figcaption b { color: var(--ink); font-weight: 600; }
+@media (max-width: 560px) { .reel { width: 160px; } .reel-wide { width: 86vw; } }
 @media (max-width: 900px) { .case { grid-template-columns: minmax(0, 1fr); } }
 
 /* цены */

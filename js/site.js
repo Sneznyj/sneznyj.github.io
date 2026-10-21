@@ -1,4 +1,4 @@
-/* Лендинг студии: тема, шапка при прокрутке, меню языков, бриф (письмо или копия), подсказка о версии на языке посетителя. */
+/* Лендинг студии: тема, шапка при прокрутке, меню языков, видео-превью работ, бриф (письмо или копия), подсказка о версии на языке посетителя. */
 (function () {
   'use strict';
   const doc = document.documentElement, body = document.body;
@@ -25,6 +25,33 @@
     document.addEventListener('click', (e) => { if (lng.open && !lng.contains(e.target)) lng.open = false; });
     document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && lng.open) { lng.open = false; lng.querySelector('summary').focus(); } });
   }
+
+  // ---------- видео-превью работ: файл грузится и играет, пока ролик на экране; кнопка — пауза и пуск ----------
+  // при «уменьшить движение» и экономии трафика сам не запускается — только по кнопке
+  const still = matchMedia('(prefers-reduced-motion: reduce)').matches || !!(navigator.connection && navigator.connection.saveData);
+  const vids = [...document.querySelectorAll('.vid')];
+  const load = (v) => { if (!v.getAttribute('src') && v.dataset.src) v.src = v.dataset.src; };
+  const mark = (box, on) => { const b = box.querySelector('.vid-btn'); box.classList.toggle('paused', !on); b.setAttribute('aria-label', on ? b.dataset.pause : b.dataset.play); };
+  vids.forEach((box) => {
+    const v = box.querySelector('video');
+    mark(box, false);
+    box.querySelector('.vid-btn').addEventListener('click', () => {
+      if (v.paused) { box.dataset.user = ''; load(v); v.play().catch(() => { /* браузер не дал */ }); } else { box.dataset.user = 'paused'; v.pause(); }
+    });
+    v.addEventListener('play', () => mark(box, true));
+    v.addEventListener('pause', () => mark(box, false));
+  });
+  if (!still && 'IntersectionObserver' in window) {
+    const io = new IntersectionObserver((list) => list.forEach((e) => {
+      const v = e.target.querySelector('video');
+      if (e.isIntersecting) { if (e.target.dataset.user !== 'paused') { load(v); v.play().catch(() => { /* браузер не дал */ }); } } else if (!v.paused) v.pause();
+    }), { threshold: 0.35 });
+    vids.forEach((box) => io.observe(box));
+  }
+  // ролики: одновременно играет только один
+  document.addEventListener('play', (e) => {
+    if (e.target.closest && e.target.closest('.reels')) document.querySelectorAll('.reels video').forEach((v) => { if (v !== e.target) v.pause(); });
+  }, true);
 
   // ---------- кнопка тарифа → бриф с выбранным пакетом ----------
   document.addEventListener('click', (e) => {

@@ -1,0 +1,531 @@
+{
+  "_comment": "Кейс «ПРО Скидки» (21.10.2026, Павел: «добавь сайт со скидками грузинский»). Свой продукт: сайт proskidki.com + бот @pro_skidki_georgia_bot + карта skidki.sneznyj.com + канал t.me/pro_skidki_georgia; исходники D:\\FromC\\Apps\\Skidki_Georgia_Bot. Цифры на 21.10 из https://proskidki.com/api/data: 1283 акции, 20 магазинов (16 сетей супермаркетов + 4 магазина техники, техника пока «в разработке»), 3193 филиала, 95 городов; поиск RU/EN/KA и 96 тестов — README бота. Снимки и видео — живой сайт, Батуми (node landing/_dev/videos.js skidki). order 15 — сразу после Saliastro.",
+  "order": 15,
+  "url": "https://proskidki.com/",
+  "logo": "logo.svg",
+  "images": [
+    "home.webp",
+    "map.webp"
+  ],
+  "image_mobile": "mobile.webp",
+  "video": "preview.mp4",
+  "links": [
+    [
+      "bot",
+      "https://t.me/pro_skidki_georgia_bot"
+    ],
+    [
+      "channel",
+      "https://t.me/pro_skidki_georgia"
+    ],
+    [
+      "map",
+      "https://skidki.sneznyj.com/"
+    ]
+  ],
+  "image_alt": {
+    "home.webp": "PRO Skidki: deals in Batumi — products, household and hygiene, sorted by best value",
+    "map.webp": "Map of Batumi shops with the list of chains on the left",
+    "mobile.webp": "PRO Skidki on a phone: search, filters and the bottom menu"
+  },
+  "facts": {
+    "offers": 1283,
+    "stores": 20,
+    "grocery_chains": 16,
+    "tech_shops": 4,
+    "branches": 3193,
+    "cities": 95,
+    "search_languages": [
+      "ru",
+      "en",
+      "ka"
+    ],
+    "tests": 96,
+    "source": "ekalata.gov.ge (GCCA)"
+  },
+  "en": {
+    "tag": "Own product · discounts in Georgia · 2026",
+    "title": "PRO Skidki — supermarket deals across Georgia on a website, in Telegram and on a map",
+    "link": "Open PRO Skidki",
+    "lead": "A service for people living in Georgia who don’t want to visit five shops to find the cheapest milk. Chain promotions come from the government price portal ekalata.gov.ge: the site shows where a product is cheaper right now, the Telegram bot watches the things you buy, and the map points to the nearest shop. The interface is in Russian, and search also understands English and Georgian.",
+    "points": [
+      "About 1,300 deals: groceries, household and personal care from 16 supermarket chains; electronics from Zoommer, Alta, Elit and Kontakt are in the works",
+      "3,193 shops in 95 cities on the map: tap a pin for that chain’s deals, the address and a route; a “Nearest to me” button",
+      "An honest price per kg, litre or piece: pack sizes are checked against the label, sorting uses the real price",
+      "Telegram bot @pro_skidki_georgia_bot: search, “Watch” a product, a morning digest, your own shops",
+      "Channel t.me/pro_skidki_georgia with automatic posts: top deals of the day, “where it’s cheaper” by weekday, new deals, chain booklets"
+    ],
+    "numbers": [
+      [
+        "~1,300",
+        "deals right now"
+      ],
+      [
+        "3,193",
+        "shops on the map"
+      ],
+      [
+        "95",
+        "cities in Georgia"
+      ],
+      [
+        "3",
+        "search languages: RU, EN, KA"
+      ]
+    ],
+    "more": [
+      [
+        "For shoppers",
+        [
+          "A storefront by section, sorted by best value, with a minimum discount filter",
+          "“My shops”: switched-off chains disappear from the feed, search and map; “Favourites” ♥",
+          "Product window: old and new price, price per unit, deal dates, “Where to buy” and a link to the shop",
+          "Works in the browser on phone and desktop, no sign-up"
+        ]
+      ],
+      [
+        "Bot and channel",
+        [
+          "Digests as images: photo, old/new price, pack size, price per kg or litre, chain and end date",
+          "Alerts about a new deal or a price drop — without repeats",
+          "“Near me” by location (coordinates aren’t stored) and the map right inside Telegram",
+          "The channel posts on schedule: top of the day, “where it’s cheaper”, new deals and official PDF booklets"
+        ]
+      ],
+      [
+        "How it’s built",
+        [
+          "Data only from open sources that allow it: the government price portal and shop sites whose terms don’t forbid collection",
+          "Electronics photos appear only with the shop’s permission",
+          "A Cloudflare Worker caches data for 30 minutes; if the portal is down, the site shows the last prices for up to 3 days",
+          "The bot runs around the clock on its own server; 96 automated tests"
+        ]
+      ]
+    ]
+  },
+  "ru": {
+    "tag": "Свой продукт · скидки в Грузии · 2026",
+    "title": "ПРО Скидки — акции супермаркетов Грузии на сайте, в Telegram и на карте",
+    "link": "Открыть ПРО Скидки",
+    "lead": "Сервис для тех, кто живёт в Грузии и не хочет обходить пять магазинов ради скидки на молоко. Акции сетей приходят с государственного портала цен ekalata.gov.ge: сайт показывает, где товар сейчас дешевле, бот в Telegram следит за нужными покупками, карта подсказывает ближайший магазин. Всё по-русски, а поиск понимает и английский, и грузинский.",
+    "points": [
+      "Около 1 300 акций: продукты, бытовая химия и гигиена 16 сетей супермаркетов; техника Zoommer, Alta, Elit и Kontakt — в разработке",
+      "3 193 магазина в 95 городах на карте: нажал на точку — акции этой сети, адрес и маршрут; кнопка «Ближайшие ко мне»",
+      "Честная цена за кг, литр и штуку: фасовка сверяется с названием на упаковке, сортировка — по реальной цене",
+      "Telegram-бот @pro_skidki_georgia_bot: поиск, «Следить» за товаром, утренняя подборка, свои магазины",
+      "Канал t.me/pro_skidki_georgia с автопостами: топ скидок дня, «где дешевле» по дням недели, новые акции, буклеты сетей"
+    ],
+    "numbers": [
+      [
+        "~1 300",
+        "акций прямо сейчас"
+      ],
+      [
+        "3 193",
+        "магазина на карте"
+      ],
+      [
+        "95",
+        "городов Грузии"
+      ],
+      [
+        "3",
+        "языка поиска: RU, EN, KA"
+      ]
+    ],
+    "more": [
+      [
+        "Для покупателей",
+        [
+          "Витрина по разделам с сортировкой «сначала выгодные» и порогом скидки",
+          "«Мои магазины»: выключенные сети пропадают из ленты, поиска и карты; «Избранное» ♥",
+          "Окно товара: было и стало, цена за единицу, срок акции, «Где купить» и ссылка на магазин",
+          "Работает в браузере на телефоне и компьютере, без регистрации"
+        ]
+      ],
+      [
+        "Бот и канал",
+        [
+          "Подборки картинкой: фото, цена было/стало, фасовка, цена за кг или литр, сеть и срок",
+          "Уведомления о новой акции и о снижении цены — без повторов",
+          "«Рядом со мной» по геолокации (координаты не сохраняются) и карта прямо внутри Telegram",
+          "Канал выходит сам по расписанию: топ дня, «где дешевле», новинки и официальные PDF-буклеты сетей"
+        ]
+      ],
+      [
+        "Как устроено",
+        [
+          "Данные — только из открытых источников, где сбор разрешён: госпортал цен и сайты магазинов без запрета в правилах",
+          "Фото техники показываем только с разрешения магазина",
+          "Cloudflare Worker кеширует данные на 30 минут; если портал недоступен, сайт показывает последние цены до 3 дней",
+          "Бот работает круглые сутки на своём сервере; 96 автотестов"
+        ]
+      ]
+    ]
+  },
+  "de": {
+    "tag": "Eigenes Produkt · Rabatte in Georgien · 2026",
+    "title": "PRO Skidki — Supermarkt-Angebote in ganz Georgien auf einer Website, in Telegram und auf einer Karte",
+    "link": "PRO Skidki öffnen",
+    "lead": "Ein Dienst für Menschen in Georgien, die nicht fünf Läden abklappern wollen, um die günstigste Milch zu finden. Die Aktionen der Ketten kommen vom staatlichen Preisportal ekalata.gov.ge: Die Website zeigt, wo ein Produkt gerade am günstigsten ist, der Telegram-Bot beobachtet Ihre Einkäufe, die Karte zeigt den nächsten Laden. Die Oberfläche ist russisch, die Suche versteht auch Englisch und Georgisch.",
+    "points": [
+      "Rund 1.300 Angebote: Lebensmittel, Haushalt und Körperpflege aus 16 Supermarktketten; Elektronik von Zoommer, Alta, Elit und Kontakt ist in Arbeit",
+      "3.193 Läden in 95 Städten auf der Karte: ein Klick auf einen Punkt zeigt die Angebote der Kette, Adresse und Route; Taste „In meiner Nähe“",
+      "Ehrlicher Preis pro kg, Liter und Stück: die Packungsgröße wird mit dem Etikett abgeglichen, sortiert wird nach dem echten Preis",
+      "Telegram-Bot @pro_skidki_georgia_bot: Suche, Produkt „beobachten“, Morgenauswahl, eigene Läden",
+      "Kanal t.me/pro_skidki_georgia mit automatischen Posts: Top-Angebote des Tages, „wo es günstiger ist“ nach Wochentag, neue Aktionen, Prospekte der Ketten"
+    ],
+    "numbers": [
+      [
+        "~1.300",
+        "Angebote gerade jetzt"
+      ],
+      [
+        "3.193",
+        "Läden auf der Karte"
+      ],
+      [
+        "95",
+        "Städte in Georgien"
+      ],
+      [
+        "3",
+        "Suchsprachen: RU, EN, KA"
+      ]
+    ],
+    "more": [
+      [
+        "Für Käufer",
+        [
+          "Eine Übersicht nach Bereichen, sortiert nach dem besten Preis, mit Mindestrabatt-Filter",
+          "„Meine Läden“: abgewählte Ketten verschwinden aus Feed, Suche und Karte; „Favoriten“ ♥",
+          "Produktfenster: alter und neuer Preis, Preis pro Einheit, Aktionsdauer, „Wo kaufen“ und Link zum Laden",
+          "Läuft im Browser auf Handy und Computer, ohne Anmeldung"
+        ]
+      ],
+      [
+        "Bot und Kanal",
+        [
+          "Auswahlen als Bild: Foto, alter und neuer Preis, Packungsgröße, Preis pro kg oder Liter, Kette und Enddatum",
+          "Benachrichtigungen über neue Aktionen und Preissenkungen — ohne Wiederholungen",
+          "„In meiner Nähe“ per Standort (Koordinaten werden nicht gespeichert) und die Karte direkt in Telegram",
+          "Der Kanal postet nach Plan: Top des Tages, „wo es günstiger ist“, Neuheiten und offizielle PDF-Prospekte"
+        ]
+      ],
+      [
+        "So ist es gebaut",
+        [
+          "Daten nur aus offenen Quellen, die das erlauben: das staatliche Preisportal und Shop-Websites, deren Regeln das Sammeln nicht verbieten",
+          "Fotos von Elektronik nur mit Erlaubnis des Shops",
+          "Ein Cloudflare Worker speichert die Daten 30 Minuten zwischen; fällt das Portal aus, zeigt die Website bis zu 3 Tage die letzten Preise",
+          "Der Bot läuft rund um die Uhr auf einem eigenen Server; 96 automatische Tests"
+        ]
+      ]
+    ]
+  },
+  "es": {
+    "tag": "Producto propio · descuentos en Georgia · 2026",
+    "title": "PRO Skidki — las ofertas de los supermercados de Georgia en una web, en Telegram y en un mapa",
+    "link": "Abrir PRO Skidki",
+    "lead": "Un servicio para quienes viven en Georgia y no quieren recorrer cinco tiendas para encontrar la leche más barata. Las promociones de las cadenas llegan del portal estatal de precios ekalata.gov.ge: la web muestra dónde está más barato un producto ahora mismo, el bot de Telegram vigila lo que compras y el mapa indica la tienda más cercana. La interfaz está en ruso y el buscador entiende también inglés y georgiano.",
+    "points": [
+      "Unas 1300 ofertas: alimentación, droguería e higiene de 16 cadenas de supermercados; la electrónica de Zoommer, Alta, Elit y Kontakt está en desarrollo",
+      "3193 tiendas en 95 ciudades en el mapa: al tocar un punto, las ofertas de esa cadena, la dirección y la ruta; botón «Cerca de mí»",
+      "Precio honesto por kg, litro o unidad: el formato se comprueba con el nombre del envase y se ordena por el precio real",
+      "Bot de Telegram @pro_skidki_georgia_bot: búsqueda, «Seguir» un producto, selección matinal, tus tiendas",
+      "Canal t.me/pro_skidki_georgia con publicaciones automáticas: top del día, «dónde está más barato» según el día, ofertas nuevas, folletos de las cadenas"
+    ],
+    "numbers": [
+      [
+        "~1300",
+        "ofertas ahora mismo"
+      ],
+      [
+        "3193",
+        "tiendas en el mapa"
+      ],
+      [
+        "95",
+        "ciudades de Georgia"
+      ],
+      [
+        "3",
+        "idiomas de búsqueda: RU, EN, KA"
+      ]
+    ],
+    "more": [
+      [
+        "Para quien compra",
+        [
+          "Un escaparate por secciones, ordenado por lo más ventajoso y con filtro de descuento mínimo",
+          "«Mis tiendas»: las cadenas desactivadas desaparecen del listado, la búsqueda y el mapa; «Favoritos» ♥",
+          "Ficha del producto: precio antes y ahora, precio por unidad, fechas de la oferta, «Dónde comprar» y enlace a la tienda",
+          "Funciona en el navegador del móvil y del ordenador, sin registro"
+        ]
+      ],
+      [
+        "Bot y canal",
+        [
+          "Selecciones en imagen: foto, precio antes/ahora, formato, precio por kg o litro, cadena y fecha de fin",
+          "Avisos de oferta nueva y de bajada de precio, sin repeticiones",
+          "«Cerca de mí» por ubicación (las coordenadas no se guardan) y el mapa dentro de Telegram",
+          "El canal publica solo según el horario: top del día, «dónde está más barato», novedades y folletos oficiales en PDF"
+        ]
+      ],
+      [
+        "Cómo está hecho",
+        [
+          "Datos solo de fuentes abiertas que lo permiten: el portal estatal de precios y webs de tiendas cuyas condiciones no prohíben la recogida",
+          "Las fotos de electrónica, solo con permiso de la tienda",
+          "Un Cloudflare Worker guarda los datos 30 minutos; si el portal cae, la web muestra los últimos precios hasta 3 días",
+          "El bot funciona las 24 horas en un servidor propio; 96 pruebas automáticas"
+        ]
+      ]
+    ]
+  },
+  "fr": {
+    "tag": "Produit maison · promotions en Géorgie · 2026",
+    "title": "PRO Skidki — les promos des supermarchés de Géorgie sur un site, dans Telegram et sur une carte",
+    "link": "Ouvrir PRO Skidki",
+    "lead": "Un service pour celles et ceux qui vivent en Géorgie et ne veulent pas faire cinq magasins pour trouver le lait le moins cher. Les promotions des enseignes viennent du portail public des prix ekalata.gov.ge : le site montre où un produit est le moins cher en ce moment, le bot Telegram surveille vos achats, la carte indique le magasin le plus proche. L’interface est en russe, la recherche comprend aussi l’anglais et le géorgien.",
+    "points": [
+      "Environ 1 300 promotions : alimentation, entretien et hygiène de 16 enseignes de supermarchés ; l’électronique de Zoommer, Alta, Elit et Kontakt est en préparation",
+      "3 193 magasins dans 95 villes sur la carte : un clic sur un point affiche les promos de l’enseigne, l’adresse et l’itinéraire ; bouton « Près de moi »",
+      "Un prix honnête au kilo, au litre et à la pièce : le conditionnement est vérifié avec l’étiquette, le tri se fait sur le vrai prix",
+      "Bot Telegram @pro_skidki_georgia_bot : recherche, « Suivre » un produit, sélection du matin, vos magasins",
+      "Chaîne t.me/pro_skidki_georgia avec publications automatiques : top du jour, « où c’est moins cher » selon le jour, nouvelles promos, catalogues des enseignes"
+    ],
+    "numbers": [
+      [
+        "~1 300",
+        "promotions en ce moment"
+      ],
+      [
+        "3 193",
+        "magasins sur la carte"
+      ],
+      [
+        "95",
+        "villes de Géorgie"
+      ],
+      [
+        "3",
+        "langues de recherche : RU, EN, KA"
+      ]
+    ],
+    "more": [
+      [
+        "Pour les acheteurs",
+        [
+          "Une vitrine par rayon, triée par meilleure affaire, avec un filtre de remise minimale",
+          "« Mes magasins » : les enseignes désactivées disparaissent du fil, de la recherche et de la carte ; « Favoris » ♥",
+          "Fiche produit : ancien et nouveau prix, prix à l’unité, dates de la promo, « Où acheter » et lien vers le magasin",
+          "Fonctionne dans le navigateur, sur mobile et ordinateur, sans inscription"
+        ]
+      ],
+      [
+        "Bot et chaîne",
+        [
+          "Sélections en image : photo, prix avant/après, conditionnement, prix au kilo ou au litre, enseigne et date de fin",
+          "Alertes pour une nouvelle promo ou une baisse de prix — sans doublons",
+          "« Près de moi » par géolocalisation (les coordonnées ne sont pas conservées) et la carte directement dans Telegram",
+          "La chaîne publie toute seule selon un planning : top du jour, « où c’est moins cher », nouveautés et catalogues PDF officiels"
+        ]
+      ],
+      [
+        "Comment c’est construit",
+        [
+          "Des données uniquement issues de sources ouvertes qui l’autorisent : le portail public des prix et des sites de magasins dont les conditions n’interdisent pas la collecte",
+          "Les photos d’électronique, seulement avec l’accord du magasin",
+          "Un Cloudflare Worker garde les données en cache 30 minutes ; si le portail tombe, le site affiche les derniers prix jusqu’à 3 jours",
+          "Le bot tourne jour et nuit sur son propre serveur ; 96 tests automatiques"
+        ]
+      ]
+    ]
+  },
+  "it": {
+    "tag": "Prodotto nostro · sconti in Georgia · 2026",
+    "title": "PRO Skidki — le offerte dei supermercati della Georgia su un sito, su Telegram e su una mappa",
+    "link": "Apri PRO Skidki",
+    "lead": "Un servizio per chi vive in Georgia e non vuole girare cinque negozi per trovare il latte più conveniente. Le promozioni delle catene arrivano dal portale statale dei prezzi ekalata.gov.ge: il sito mostra dove un prodotto costa meno in questo momento, il bot di Telegram tiene d’occhio i tuoi acquisti, la mappa indica il negozio più vicino. L’interfaccia è in russo, la ricerca capisce anche l’inglese e il georgiano.",
+    "points": [
+      "Circa 1.300 offerte: alimentari, casa e igiene di 16 catene di supermercati; l’elettronica di Zoommer, Alta, Elit e Kontakt è in arrivo",
+      "3.193 negozi in 95 città sulla mappa: un clic su un punto mostra le offerte della catena, l’indirizzo e il percorso; pulsante «Vicino a me»",
+      "Prezzo onesto al kg, al litro e al pezzo: il formato viene verificato con il nome sulla confezione, l’ordinamento usa il prezzo reale",
+      "Bot di Telegram @pro_skidki_georgia_bot: ricerca, «Segui» un prodotto, selezione del mattino, i tuoi negozi",
+      "Canale t.me/pro_skidki_georgia con post automatici: top del giorno, «dove costa meno» secondo il giorno, nuove offerte, volantini delle catene"
+    ],
+    "numbers": [
+      [
+        "~1.300",
+        "offerte in questo momento"
+      ],
+      [
+        "3.193",
+        "negozi sulla mappa"
+      ],
+      [
+        "95",
+        "città della Georgia"
+      ],
+      [
+        "3",
+        "lingue di ricerca: RU, EN, KA"
+      ]
+    ],
+    "more": [
+      [
+        "Per chi fa la spesa",
+        [
+          "Una vetrina per reparti, ordinata per convenienza, con filtro di sconto minimo",
+          "«I miei negozi»: le catene disattivate spariscono da elenco, ricerca e mappa; «Preferiti» ♥",
+          "Scheda prodotto: prezzo prima e dopo, prezzo unitario, durata dell’offerta, «Dove comprare» e link al negozio",
+          "Funziona nel browser di smartphone e computer, senza registrazione"
+        ]
+      ],
+      [
+        "Bot e canale",
+        [
+          "Selezioni in immagine: foto, prezzo prima/dopo, formato, prezzo al kg o al litro, catena e scadenza",
+          "Avvisi per una nuova offerta o un calo di prezzo, senza ripetizioni",
+          "«Vicino a me» tramite posizione (le coordinate non vengono salvate) e la mappa direttamente in Telegram",
+          "Il canale pubblica da solo secondo un programma: top del giorno, «dove costa meno», novità e volantini PDF ufficiali"
+        ]
+      ],
+      [
+        "Come è fatto",
+        [
+          "Dati solo da fonti aperte che lo consentono: il portale statale dei prezzi e siti di negozi le cui regole non vietano la raccolta",
+          "Le foto dell’elettronica, solo con il permesso del negozio",
+          "Un Cloudflare Worker tiene i dati in cache per 30 minuti; se il portale non risponde, il sito mostra gli ultimi prezzi fino a 3 giorni",
+          "Il bot gira giorno e notte su un server proprio; 96 test automatici"
+        ]
+      ]
+    ]
+  },
+  "pt": {
+    "tag": "Produto próprio · descontos na Geórgia · 2026",
+    "title": "PRO Skidki — as promoções dos supermercados da Geórgia num site, no Telegram e num mapa",
+    "link": "Abrir o PRO Skidki",
+    "lead": "Um serviço para quem vive na Geórgia e não quer correr cinco lojas para encontrar o leite mais barato. As promoções das cadeias vêm do portal estatal de preços ekalata.gov.ge: o site mostra onde um produto está mais barato agora, o bot do Telegram segue as suas compras e o mapa indica a loja mais próxima. A interface é em russo e a pesquisa percebe também inglês e georgiano.",
+    "points": [
+      "Cerca de 1 300 promoções: alimentação, limpeza e higiene de 16 cadeias de supermercados; a eletrónica da Zoommer, Alta, Elit e Kontakt está a caminho",
+      "3 193 lojas em 95 cidades no mapa: tocar num ponto mostra as promoções da cadeia, a morada e o percurso; botão «Perto de mim»",
+      "Preço honesto ao quilo, ao litro e à unidade: o formato é confirmado pelo nome na embalagem e a ordenação usa o preço real",
+      "Bot do Telegram @pro_skidki_georgia_bot: pesquisa, «Seguir» um produto, seleção da manhã, as suas lojas",
+      "Canal t.me/pro_skidki_georgia com publicações automáticas: top do dia, «onde está mais barato» consoante o dia, promoções novas, folhetos das cadeias"
+    ],
+    "numbers": [
+      [
+        "~1 300",
+        "promoções neste momento"
+      ],
+      [
+        "3 193",
+        "lojas no mapa"
+      ],
+      [
+        "95",
+        "cidades da Geórgia"
+      ],
+      [
+        "3",
+        "línguas de pesquisa: RU, EN, KA"
+      ]
+    ],
+    "more": [
+      [
+        "Para quem compra",
+        [
+          "Uma montra por secções, ordenada pelo mais vantajoso, com filtro de desconto mínimo",
+          "«As minhas lojas»: as cadeias desligadas desaparecem da lista, da pesquisa e do mapa; «Favoritos» ♥",
+          "Ficha do produto: preço antes e agora, preço por unidade, datas da promoção, «Onde comprar» e ligação para a loja",
+          "Funciona no navegador do telemóvel e do computador, sem registo"
+        ]
+      ],
+      [
+        "Bot e canal",
+        [
+          "Seleções em imagem: foto, preço antes/agora, formato, preço ao quilo ou ao litro, cadeia e data de fim",
+          "Alertas de promoção nova ou de descida de preço, sem repetições",
+          "«Perto de mim» pela localização (as coordenadas não são guardadas) e o mapa dentro do Telegram",
+          "O canal publica sozinho segundo um horário: top do dia, «onde está mais barato», novidades e folhetos oficiais em PDF"
+        ]
+      ],
+      [
+        "Como está feito",
+        [
+          "Dados só de fontes abertas que o permitem: o portal estatal de preços e sites de lojas cujas condições não proíbem a recolha",
+          "Fotografias de eletrónica, só com autorização da loja",
+          "Um Cloudflare Worker guarda os dados em cache 30 minutos; se o portal falhar, o site mostra os últimos preços até 3 dias",
+          "O bot funciona dia e noite num servidor próprio; 96 testes automáticos"
+        ]
+      ]
+    ]
+  },
+  "tr": {
+    "tag": "Kendi ürünümüz · Gürcistan’da indirimler · 2026",
+    "title": "PRO Skidki — Gürcistan süpermarketlerinin indirimleri bir sitede, Telegram’da ve haritada",
+    "link": "PRO Skidki’yi açın",
+    "lead": "Gürcistan’da yaşayan ve en ucuz sütü bulmak için beş market gezmek istemeyenler için bir servis. Zincirlerin kampanyaları devletin fiyat portalı ekalata.gov.ge’den gelir: site bir ürünün şu an nerede daha ucuz olduğunu gösterir, Telegram botu aldığınız ürünleri takip eder, harita en yakın marketi gösterir. Arayüz Rusça; arama İngilizce ve Gürcüceyi de anlar.",
+    "points": [
+      "Yaklaşık 1.300 kampanya: 16 süpermarket zincirinden gıda, temizlik ve kişisel bakım; Zoommer, Alta, Elit ve Kontakt elektroniği hazırlanıyor",
+      "Haritada 95 şehirde 3.193 market: bir noktaya dokunun — zincirin kampanyaları, adres ve yol tarifi; “Bana en yakın” düğmesi",
+      "Kilo, litre ve adet başına dürüst fiyat: ambalaj boyutu etiketteki adla karşılaştırılır, sıralama gerçek fiyata göre yapılır",
+      "Telegram botu @pro_skidki_georgia_bot: arama, ürünü “Takip et”, sabah seçkisi, kendi marketleriniz",
+      "Otomatik paylaşımlı kanal t.me/pro_skidki_georgia: günün en iyi indirimleri, haftanın gününe göre “nerede daha ucuz”, yeni kampanyalar, zincirlerin broşürleri"
+    ],
+    "numbers": [
+      [
+        "~1.300",
+        "güncel kampanya"
+      ],
+      [
+        "3.193",
+        "market haritada"
+      ],
+      [
+        "95",
+        "Gürcistan şehri"
+      ],
+      [
+        "3",
+        "arama dili: RU, EN, KA"
+      ]
+    ],
+    "more": [
+      [
+        "Alışveriş yapanlar için",
+        [
+          "Bölümlere ayrılmış vitrin; en avantajlıya göre sıralama ve en az indirim filtresi",
+          "“Marketlerim”: kapattığınız zincirler listeden, aramadan ve haritadan kalkar; “Favoriler” ♥",
+          "Ürün penceresi: eski ve yeni fiyat, birim fiyat, kampanya tarihleri, “Nereden alınır” ve markete bağlantı",
+          "Telefonda ve bilgisayarda tarayıcıda çalışır, üyelik gerekmez"
+        ]
+      ],
+      [
+        "Bot ve kanal",
+        [
+          "Görsel seçkiler: fotoğraf, eski/yeni fiyat, ambalaj, kilo veya litre fiyatı, zincir ve bitiş tarihi",
+          "Yeni kampanya ve fiyat düşüşü bildirimleri — tekrar olmadan",
+          "Konuma göre “Yakınımda” (koordinatlar saklanmaz) ve doğrudan Telegram içinde harita",
+          "Kanal programa göre kendiliğinden paylaşır: günün en iyileri, “nerede daha ucuz”, yenilikler ve resmi PDF broşürler"
+        ]
+      ],
+      [
+        "Nasıl yapıldı",
+        [
+          "Veriler yalnızca buna izin veren açık kaynaklardan: devletin fiyat portalı ve kuralları veri toplamayı yasaklamayan market siteleri",
+          "Elektronik fotoğrafları yalnızca marketin izniyle",
+          "Bir Cloudflare Worker verileri 30 dakika önbellekte tutar; portal çökerse site son fiyatları 3 güne kadar gösterir",
+          "Bot kendi sunucusunda günün her saati çalışır; 96 otomatik test"
+        ]
+      ]
+    ]
+  },
+  "image_alt_ru": {
+    "home.webp": "ПРО Скидки: скидки в Батуми — продукты, бытовая химия и гигиена, сначала выгодные",
+    "map.webp": "Карта магазинов Батуми, слева — список сетей",
+    "mobile.webp": "ПРО Скидки на телефоне: поиск, фильтры и нижнее меню"
+  }
+}

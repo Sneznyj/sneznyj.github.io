@@ -73,6 +73,33 @@
         "0",
         "sign-ups or downloads needed"
       ]
+    ],
+    "more": [
+      [
+        "For singers and musicians",
+        [
+          "Record your voice and process it with ready-made presets: autotune, tone, reverb and echo — with fine controls",
+          "Sing along to a song: the original’s notes and your voice’s pitch line in real time",
+          "Exercises: hitting a note, scales, range, long notes; a breakdown of each take",
+          "Tuners for guitar, bass, ukulele, violin, viola, cello, mandolin, balalaika, domra, banjo, seven-string guitar, plus a chromatic one"
+        ]
+      ],
+      [
+        "Search and analytics",
+        [
+          "50 pages in two languages: every instrument and exercise has its own page written for a real search",
+          "Pre-rendering, sitemap, hreflang and structured data; Yandex Webmaster and Google Search Console connected",
+          "Metrica with 7 goals turns on only after the visitor agrees"
+        ]
+      ],
+      [
+        "How it’s built",
+        [
+          "Sound analysis runs entirely in the browser: pitch, key, tempo, loudness",
+          "Recordings never leave the device; no sign-up",
+          "Works on a phone; 53 automated tests"
+        ]
+      ]
     ]
   },
   "ru": {
@@ -103,6 +130,33 @@
       [
         "0",
         "регистраций и скачиваний"
+      ]
+    ],
+    "more": [
+      [
+        "Для певцов и музыкантов",
+        [
+          "Запись голоса и обработка готовыми пресетами: автотюн, тембр, реверберация и эхо — с тонкой настройкой",
+          "Пение под песню: ноты оригинала и линия вашего голоса в реальном времени",
+          "Упражнения: попадание в ноту, гаммы, диапазон, длинные ноты; разбор каждого дубля",
+          "Тюнеры для гитары, баса, укулеле, скрипки, альта, виолончели, мандолины, балалайки, домры, банджо, семиструнной гитары и хроматический"
+        ]
+      ],
+      [
+        "Поиск и аналитика",
+        [
+          "50 страниц на двух языках: у каждого инструмента и упражнения своя страница под реальный запрос",
+          "Пререндер, карта сайта, hreflang и разметка; подключены Яндекс Вебмастер и Google Search Console",
+          "Метрика с 7 целями включается только после согласия посетителя"
+        ]
+      ],
+      [
+        "Как устроено",
+        [
+          "Анализ звука целиком в браузере: высота тона, тональность, темп, громкость",
+          "Записи не покидают устройство; регистрация не нужна",
+          "Работает на телефоне; 53 автотеста"
+        ]
       ]
     ]
   },
@@ -136,6 +190,33 @@
         "0",
         "Anmeldungen oder Downloads nötig"
       ]
+    ],
+    "more": [
+      [
+        "Für Sänger und Musiker",
+        [
+          "Stimme aufnehmen und mit fertigen Presets bearbeiten: Autotune, Klangfarbe, Hall und Echo — mit Feineinstellung",
+          "Zu einem Song mitsingen: die Noten des Originals und die Tonhöhe Ihrer Stimme in Echtzeit",
+          "Übungen: Ton treffen, Tonleitern, Stimmumfang, lange Töne; Auswertung jeder Aufnahme",
+          "Stimmgeräte für Gitarre, Bass, Ukulele, Geige, Bratsche, Cello, Mandoline, Balalaika, Domra, Banjo, siebensaitige Gitarre und ein chromatisches"
+        ]
+      ],
+      [
+        "Suche und Statistik",
+        [
+          "50 Seiten in zwei Sprachen: jedes Instrument und jede Übung hat eine eigene Seite für eine echte Suchanfrage",
+          "Vorgerendert, mit Sitemap, hreflang und strukturierten Daten; Yandex Webmaster und Google Search Console verbunden",
+          "Metrica mit 7 Zielen startet erst nach Zustimmung des Besuchers"
+        ]
+      ],
+      [
+        "So ist es gebaut",
+        [
+          "Die Tonanalyse läuft komplett im Browser: Tonhöhe, Tonart, Tempo, Lautheit",
+          "Aufnahmen verlassen das Gerät nie; keine Anmeldung",
+          "Funktioniert auf dem Handy; 53 automatische Tests"
+        ]
+      ]
     ]
   },
   "es": {
@@ -166,6 +247,33 @@
       [
         "0",
         "registros o descargas necesarios"
+      ]
+    ],
+    "more": [
+      [
+        "Para cantantes y músicos",
+        [
+          "Graba tu voz y procésala con presets: autotune, timbre, reverberación y eco, con ajuste fino",
+          "Canta sobre una canción: las notas del original y la línea de tu voz en tiempo real",
+          "Ejercicios: dar la nota, escalas, tesitura, notas largas; análisis de cada toma",
+          "Afinadores para guitarra, bajo, ukelele, violín, viola, violonchelo, mandolina, balalaika, domra, banjo, guitarra de siete cuerdas y uno cromático"
+        ]
+      ],
+      [
+        "Búsqueda y analítica",
+        [
+          "50 páginas en dos idiomas: cada instrumento y ejercicio tiene su página para una búsqueda real",
+          "Páginas pregeneradas, mapa del sitio, hreflang y datos estructurados; Yandex Webmaster y Google Search Console conectados",
+          "Metrica con 7 objetivos solo se activa si el visitante lo acepta"
+        ]
+      ],
+      [
+        "Cómo está hecho",
+        [
+          "El análisis del sonido se hace entero en el navegador: altura, tonalidad, tempo, volumen",
+          "Las grabaciones nunca salen del dispositivo; sin registro",
+          "Funciona en el móvil; 53 pruebas automáticas"
+        ]
       ]
     ]
   },
@@ -198,6 +306,33 @@
         "0",
         "inscription ou téléchargement nécessaire"
       ]
+    ],
+    "more": [
+      [
+        "Pour chanteurs et musiciens",
+        [
+          "Enregistrer sa voix et la traiter avec des presets : autotune, timbre, réverbération et écho — avec réglages fins",
+          "Chanter sur une chanson : les notes de l’original et la ligne de votre voix en temps réel",
+          "Exercices : tenir la note, gammes, tessiture, notes longues ; analyse de chaque prise",
+          "Accordeurs pour guitare, basse, ukulélé, violon, alto, violoncelle, mandoline, balalaïka, domra, banjo, guitare à sept cordes, plus un chromatique"
+        ]
+      ],
+      [
+        "Recherche et statistiques",
+        [
+          "50 pages en deux langues : chaque instrument et chaque exercice a sa page, écrite pour une vraie recherche",
+          "Pré-génération, plan du site, hreflang et données structurées ; Yandex Webmaster et Google Search Console connectés",
+          "Metrica avec 7 objectifs ne s’active qu’après l’accord du visiteur"
+        ]
+      ],
+      [
+        "Comment c’est construit",
+        [
+          "L’analyse du son se fait entièrement dans le navigateur : hauteur, tonalité, tempo, volume",
+          "Les enregistrements ne quittent jamais l’appareil ; pas d’inscription",
+          "Fonctionne sur mobile ; 53 tests automatiques"
+        ]
+      ]
     ]
   },
   "it": {
@@ -228,6 +363,33 @@
       [
         "0",
         "registrazioni o download necessari"
+      ]
+    ],
+    "more": [
+      [
+        "Per cantanti e musicisti",
+        [
+          "Registra la voce ed elaborala con preset pronti: autotune, timbro, riverbero ed eco, con regolazioni fini",
+          "Canta su una canzone: le note dell’originale e la linea della tua voce in tempo reale",
+          "Esercizi: prendere la nota, scale, estensione, note lunghe; analisi di ogni registrazione",
+          "Accordatori per chitarra, basso, ukulele, violino, viola, violoncello, mandolino, balalaika, domra, banjo, chitarra a sette corde e uno cromatico"
+        ]
+      ],
+      [
+        "Ricerca e statistiche",
+        [
+          "50 pagine in due lingue: ogni strumento ed esercizio ha la sua pagina per una ricerca reale",
+          "Pagine pregenerate, sitemap, hreflang e dati strutturati; Yandex Webmaster e Google Search Console collegati",
+          "Metrica con 7 obiettivi si attiva solo dopo il consenso del visitatore"
+        ]
+      ],
+      [
+        "Come è fatto",
+        [
+          "L’analisi del suono avviene tutta nel browser: intonazione, tonalità, tempo, volume",
+          "Le registrazioni non lasciano mai il dispositivo; non serve registrarsi",
+          "Funziona sullo smartphone; 53 test automatici"
+        ]
       ]
     ]
   },
@@ -260,6 +422,33 @@
         "0",
         "registos ou downloads necessários"
       ]
+    ],
+    "more": [
+      [
+        "Para cantores e músicos",
+        [
+          "Gravar a voz e tratá-la com presets: autotune, timbre, reverberação e eco — com ajuste fino",
+          "Cantar sobre uma música: as notas do original e a linha da sua voz em tempo real",
+          "Exercícios: acertar na nota, escalas, extensão, notas longas; análise de cada gravação",
+          "Afinadores para guitarra, baixo, ukulele, violino, viola, violoncelo, bandolim, balalaica, domra, banjo, guitarra de sete cordas e um cromático"
+        ]
+      ],
+      [
+        "Pesquisa e estatísticas",
+        [
+          "50 páginas em duas línguas: cada instrumento e exercício tem a sua página para uma pesquisa real",
+          "Páginas pré-geradas, mapa do site, hreflang e dados estruturados; Yandex Webmaster e Google Search Console ligados",
+          "A Metrica com 7 objetivos só liga depois de o visitante aceitar"
+        ]
+      ],
+      [
+        "Como está feito",
+        [
+          "A análise do som corre toda no navegador: afinação, tonalidade, andamento, volume",
+          "As gravações nunca saem do dispositivo; sem registo",
+          "Funciona no telemóvel; 53 testes automáticos"
+        ]
+      ]
     ]
   },
   "tr": {
@@ -291,6 +480,35 @@
         "0",
         "kayıt veya indirme gerekmez"
       ]
+    ],
+    "more": [
+      [
+        "Şarkıcılar ve müzisyenler için",
+        [
+          "Sesinizi kaydedin ve hazır ön ayarlarla işleyin: autotune, tını, reverb ve eko — ince ayarlarla",
+          "Bir şarkıya eşlik edin: orijinalin notaları ve sesinizin perde çizgisi gerçek zamanlı",
+          "Alıştırmalar: notayı tutturma, gamlar, ses aralığı, uzun notalar; her kaydın analizi",
+          "Gitar, bas, ukulele, keman, viyola, çello, mandolin, balalayka, domra, banjo, yedi telli gitar için akort aletleri ve bir kromatik akort aleti"
+        ]
+      ],
+      [
+        "Arama ve istatistik",
+        [
+          "İki dilde 50 sayfa: her enstrüman ve alıştırmanın gerçek bir arama için yazılmış kendi sayfası var",
+          "Önceden oluşturulmuş sayfalar, site haritası, hreflang ve yapılandırılmış veri; Yandex Webmaster ve Google Search Console bağlı",
+          "7 hedefli Metrica yalnızca ziyaretçi onay verdikten sonra açılır"
+        ]
+      ],
+      [
+        "Nasıl yapıldı",
+        [
+          "Ses analizi tamamen tarayıcıda yapılır: perde, ton, tempo, ses yüksekliği",
+          "Kayıtlar cihazdan hiç çıkmaz; üyelik gerekmez",
+          "Telefonda çalışır; 53 otomatik test"
+        ]
+      ]
     ]
-  }
+  },
+  "video": "preview-en.mp4",
+  "video_ru": "preview-ru.mp4"
 }
