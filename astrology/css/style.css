@@ -421,8 +421,8 @@ em.accent, .accent { font-style: italic; color: var(--lav-strong); }
 .form-row { display: grid; gap: 16px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .form-row.three { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 @media (max-width: 640px) { .form-row, .form-row.three { grid-template-columns: 1fr; } }
-/* месяц («October 2026», «setembro de 2026») шире периода: в узкой колонке прогноза ему нужна большая доля строки */
-@media (min-width: 641px) { .form-row:has(> .field > input[type="month"]) { grid-template-columns: minmax(0, 1.45fr) minmax(0, 1fr); } }
+/* боковая колонка прогноза (380px): «Start» и «Period» — друг под другом, рядом месяц («September 2026») и «12 months» не помещаются */
+@media (min-width: 1001px) { .tool-layout > aside .form-row:has(> .field > input[type="month"]) { grid-template-columns: minmax(0, 1fr); } }
 .field { display: grid; grid-template-columns: minmax(0, 1fr); gap: 6px; min-width: 0; position: relative; }
 .field > label, .field > .label { font-size: .82rem; font-weight: 600; color: var(--ink-2); letter-spacing: .01em; }
 .field .hint { font-size: .76rem; color: var(--ink-3); }
