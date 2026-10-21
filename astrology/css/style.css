@@ -421,7 +421,9 @@ em.accent, .accent { font-style: italic; color: var(--lav-strong); }
 .form-row { display: grid; gap: 16px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .form-row.three { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 @media (max-width: 640px) { .form-row, .form-row.three { grid-template-columns: 1fr; } }
-.field { display: grid; gap: 6px; min-width: 0; position: relative; }
+/* месяц («October 2026», «setembro de 2026») шире периода: в узкой колонке прогноза ему нужна большая доля строки */
+@media (min-width: 641px) { .form-row:has(> .field > input[type="month"]) { grid-template-columns: minmax(0, 1.45fr) minmax(0, 1fr); } }
+.field { display: grid; grid-template-columns: minmax(0, 1fr); gap: 6px; min-width: 0; position: relative; }
 .field > label, .field > .label { font-size: .82rem; font-weight: 600; color: var(--ink-2); letter-spacing: .01em; }
 .field .hint { font-size: .76rem; color: var(--ink-3); }
 .input, .select, .textarea { width: 100%; padding: 12px 14px; border-radius: 12px; border: 1px solid var(--line-2); background: var(--surface-solid); color: var(--ink); transition: border-color .2s, box-shadow .2s; min-height: 46px; }
@@ -572,6 +574,7 @@ em.accent, .accent { font-style: italic; color: var(--lav-strong); }
 .cal .day .ms { font-family: var(--ff-glyph); color: var(--lav-strong); font-size: 1rem; }
 .cal .day .ld { color: var(--ink-3); }
 .cal .day .ev { font-weight: 700; color: var(--gold); font-size: .72rem; }
+@media (max-width: 480px) { .cal .day .ev { hyphens: auto; overflow-wrap: anywhere; } }
 .cal .day .voc { color: var(--rose-strong); font-weight: 600; font-size: .7rem; }
 @media (max-width: 700px) { .cal { gap: 3px; } .cal .day { min-height: 70px; padding: 5px; font-size: .64rem; } .cal .day .ld { display: none; } .cal .day .dn { font-size: .85rem; } .cal .day .dn svg { width: 16px; height: 16px; } }
 
@@ -583,8 +586,8 @@ em.accent, .accent { font-style: italic; color: var(--lav-strong); }
 .gantt .seg-r { position: absolute; top: 3px; bottom: 3px; border-radius: 6px; background: linear-gradient(90deg, var(--rose-strong), #b07ad8); box-shadow: 0 4px 12px -4px rgba(201, 107, 143, .6); cursor: help; }
 .gantt .seg-s { position: absolute; top: 9px; bottom: 9px; border-radius: 6px; background: var(--rose); }
 .gantt .today-line { position: absolute; top: -4px; bottom: -4px; width: 2px; background: var(--gold); border-radius: 2px; }
-.gantt .months { display: grid; grid-template-columns: repeat(12, 1fr); font-size: .72rem; color: var(--ink-3); text-transform: uppercase; letter-spacing: .08em; }
-@media (max-width: 600px) { .gantt { grid-template-columns: 1fr; } .gantt .months span:nth-child(2n) { visibility: hidden; } }
+.gantt .months { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); font-size: .72rem; color: var(--ink-3); text-transform: uppercase; letter-spacing: .08em; }
+@media (max-width: 600px) { .gantt { grid-template-columns: minmax(0, 1fr); } .gantt .months span:nth-child(2n) { visibility: hidden; } }
 .event-list { display: grid; gap: 10px; }
 .event { display: grid; grid-template-columns: 74px 44px minmax(0, 1fr); gap: 12px; align-items: center; padding: 12px 16px; border-radius: 14px; background: var(--surface); border: 1px solid var(--line); }
 .event .d { font-weight: 700; font-size: .92rem; }
@@ -1521,7 +1524,7 @@ body::before { content: ''; position: fixed; inset: 0; z-index: -1; pointer-even
 .voc-item .glyph { color: var(--lav-strong); }
 .voc-tip { display: flex; gap: 8px; margin: 0; color: var(--ink-2); }
 .voc-tip svg { width: 18px; height: 18px; flex-shrink: 0; color: var(--rose-strong); margin-top: 1px; }
-.voc-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 8px; }
+.voc-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(280px, 100%), 1fr)); gap: 8px; }
 .voc-row { display: grid; grid-template-columns: 76px minmax(0, 1fr) auto; align-items: center; gap: 10px; padding: 10px 12px; border-radius: 12px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); text-align: left; cursor: pointer; font: inherit; font-size: .88rem; transition: border-color .2s, transform .2s; }
 .voc-row:hover { border-color: var(--lav); transform: translateY(-1px); }
 .voc-row .vd { font-weight: 700; color: var(--ink-2); }
@@ -1538,6 +1541,8 @@ body::before { content: ''; position: fixed; inset: 0; z-index: -1; pointer-even
   .voc-bar { height: 3px; }
   .voc-row { grid-template-columns: 68px minmax(0, 1fr) auto; }
 }
+/* узкий телефон: смена знака — под временем, иначе время наезжает на неё */
+@media (max-width: 380px) { .voc-row { grid-template-columns: 56px minmax(0, 1fr); row-gap: 2px; } .voc-row .vs { grid-column: 2; } }
 
 /* ---------- дата рождения: ввод цифрами и выбор в календаре (ui.js → dobHTML / enhanceDob) ---------- */
 .dob { position: relative; min-width: 0; }
