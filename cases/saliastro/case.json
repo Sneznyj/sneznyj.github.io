@@ -1,0 +1,296 @@
+{
+  "_comment": "Кейс «Saliastro» для лендинга Nevaro Studio (21.10.2026, раньше — Natalogy в cases/natalogy). Свой продукт, открыт всем с 19.10.2026 на saliastro.com. Цифры — проверенные факты на 21.10: 7 сфер и 10 дел, 9 типов карт в профи, сверка со Swiss Ephemeris точнее 1′, 34 страницы под поиск (sitemap.xml без главной, app, download, privacy, terms), 4 тарифа (Бесплатно/Плюс/Профи/VIP), 7 дней пробного, входы по /health сервера (google, yandex, telegram, email, passkey, emailcode). Снимки — вымышленные Mia (EN) и Анна (RU): node _dev/case_shots.js в исходниках Saliastro (уведомление о политике на снимках скрыть ключом saliastro:policy). order — место среди работ: 10 = первым, до Алины (20).",
+  "order": 10,
+  "url": "https://saliastro.com/",
+  "logo": "logo.webp",
+  "logo_png": "icon-512.png",
+  "images": [
+    "calendar-en.webp",
+    "chart-en.webp"
+  ],
+  "images_ru": [
+    "calendar-ru.webp",
+    "chart-ru.webp"
+  ],
+  "image_mobile": "mobile-today-en.webp",
+  "image_alt": {
+    "calendar-en.webp": "Saliastro calendar: every day scored from 1 to 10, with the day panel on the right",
+    "chart-en.webp": "Birth chart with transits in a Sotis/Chronos-style wheel, the time machine and dynamics on the right",
+    "mobile-today-en.webp": "Today on a phone: day score, week strip and scores by life area",
+    "calendar-ru.webp": "Календарь Saliastro: у каждого дня баллы от 1 до 10, справа — панель выбранного дня",
+    "chart-ru.webp": "Натальная карта с транзитами: колесо как в Sotis и Chronos, справа — машина времени и динамика"
+  },
+  "facts": {
+    "life_areas": 7,
+    "activities": 10,
+    "chart_types": 9,
+    "search_pages": 34,
+    "plans": 4,
+    "trial_days": 7,
+    "languages": [
+      "ru",
+      "en"
+    ],
+    "sign_in": [
+      "google",
+      "yandex",
+      "telegram",
+      "email code",
+      "password",
+      "passkey"
+    ],
+    "payments": "lava.top: RUB, USD, EUR",
+    "accuracy_vs_swiss_ephemeris": "better than 1 arcminute",
+    "server": "own VPS (Timeweb, Moscow) + Cloudflare DNS",
+    "telegram": "@saliastro_bot, @saliastro_tg",
+    "status": "public since 2026-10-19 11:30 (Batumi)"
+  },
+  "en": {
+    "tag": "Own product · astrology · live since October 2026",
+    "title": "Saliastro — an astrology calendar that scores every day",
+    "link": "Open Saliastro",
+    "lead": "Our own product for people who don’t know astrology: enter a birth date and see which days suit love, money, work and launches, scored from 1 to 10. Inside is a full astro workbench on the same engine we put into astrologers’ sites — and around it everything a live product needs: accounts, subscriptions, payments, its own server and pages built for search.",
+    "points": [
+      "Every day scored 1–10 for 7 life areas and 10 activities; a birth chart in plain words, compatibility, numerology, the void-of-course Moon by the hour",
+      "A pro mode for astrologers: 9 chart types, two charts side by side, transits, solar returns, firdaria, astrocartography; birth-time rectification on the VIP plan",
+      "Sign-in with Google, Yandex, Telegram, an email code or a passkey; 4 plans with a 7-day trial, payments through lava.top in roubles, dollars and euros",
+      "34 pages written for real searches — the 2027 horoscope for every sign, a moon calendar for every month, Mercury retrograde, eclipses — calculated by the engine and updated automatically",
+      "Its own server, fast both in Russia and abroad; a Telegram bot and a channel with a daily horoscope; installs on a phone like an app and works offline"
+    ],
+    "numbers": [
+      [
+        "1–10",
+        "score for every day, 7 life areas"
+      ],
+      [
+        "34",
+        "pages built for search"
+      ],
+      [
+        "4",
+        "plans, paid in ₽, $ and €"
+      ],
+      [
+        "<1′",
+        "difference from Swiss Ephemeris"
+      ]
+    ]
+  },
+  "ru": {
+    "tag": "Свой продукт · астрология · открыт с октября 2026",
+    "title": "Saliastro — астрокалендарь с баллами на каждый день",
+    "link": "Открыть Saliastro",
+    "lead": "Наш собственный сервис для тех, кто не знает астрологию: ввёл дату рождения — и видно, какие дни хороши для любви, денег, работы и запусков, с баллами от 1 до 10. Внутри — полноценный астропроцессор на том же движке, что и сайты астрологов, а вокруг — всё, что нужно живому продукту: аккаунты, подписки, оплата, свой сервер и страницы под поиск.",
+    "points": [
+      "Баллы 1–10 на каждый день по 7 сферам и 10 делам; натальная карта простым языком, совместимость, нумерология, Луна без курса по часам",
+      "Профи-режим для астрологов: 9 типов карт, две карты рядом, транзиты, соляр, фирдарии, астрокарта; ректификация времени рождения — в тарифе VIP",
+      "Вход через Google, Яндекс, Telegram, код на почту или ключ доступа; 4 тарифа и 7 дней пробного периода, оплата через lava.top в рублях, долларах и евро",
+      "34 страницы под поисковые запросы — гороскоп на 2027 год по знакам, лунный календарь по месяцам, ретроградный Меркурий, затмения — считает движок, обновляются сами",
+      "Свой сервер — быстро открывается и в России, и за границей; Telegram-бот и канал с гороскопом каждое утро; ставится на телефон как приложение и работает без интернета"
+    ],
+    "numbers": [
+      [
+        "1–10",
+        "баллы каждого дня, 7 сфер"
+      ],
+      [
+        "34",
+        "страницы под поиск"
+      ],
+      [
+        "4",
+        "тарифа, оплата в ₽, $ и €"
+      ],
+      [
+        "<1′",
+        "расхождение со Swiss Ephemeris"
+      ]
+    ]
+  },
+  "de": {
+    "tag": "Eigenes Produkt · Astrologie · live seit Oktober 2026",
+    "title": "Saliastro — ein Astro-Kalender, der jeden Tag bewertet",
+    "link": "Saliastro öffnen",
+    "lead": "Unser eigenes Produkt für Menschen ohne Astrologie-Kenntnisse: Geburtsdatum eingeben und sehen, welche Tage sich für Liebe, Geld, Arbeit und Neustarts eignen — bewertet von 1 bis 10. Darin steckt eine vollständige Astro-Werkbank mit derselben Engine wie in den Websites für Astrologen, und rundherum alles, was ein echtes Produkt braucht: Konten, Abos, Zahlungen, ein eigener Server und Seiten für die Suche.",
+    "points": [
+      "Jeder Tag mit 1–10 bewertet für 7 Lebensbereiche und 10 Vorhaben; Geburtshoroskop in einfachen Worten, Partnerschaft, Numerologie, Void-of-Course-Mond auf die Stunde genau",
+      "Profi-Modus für Astrologen: 9 Horoskoparten, zwei Horoskope nebeneinander, Transite, Solare, Firdarien, Astrokartografie; Geburtszeitkorrektur im VIP-Tarif",
+      "Anmeldung mit Google, Yandex, Telegram, E-Mail-Code oder Passkey; 4 Tarife mit 7 Tagen Probezeit, Zahlung über lava.top in Rubel, Dollar und Euro",
+      "34 Seiten für echte Suchanfragen — Horoskop 2027 für jedes Zeichen, Mondkalender für jeden Monat, rückläufiger Merkur, Finsternisse — von der Engine berechnet und automatisch aktualisiert",
+      "Eigener Server, schnell in Russland wie im Ausland; Telegram-Bot und Kanal mit Tageshoroskop; lässt sich wie eine App aufs Handy installieren und funktioniert offline"
+    ],
+    "numbers": [
+      [
+        "1–10",
+        "Bewertung für jeden Tag, 7 Bereiche"
+      ],
+      [
+        "34",
+        "Seiten für die Suche"
+      ],
+      [
+        "4",
+        "Tarife, Zahlung in ₽, $ und €"
+      ],
+      [
+        "<1′",
+        "Abweichung von Swiss Ephemeris"
+      ]
+    ]
+  },
+  "es": {
+    "tag": "Producto propio · astrología · en marcha desde octubre de 2026",
+    "title": "Saliastro — un calendario astrológico que puntúa cada día",
+    "link": "Abrir Saliastro",
+    "lead": "Nuestro propio producto para quienes no saben astrología: introduces una fecha de nacimiento y ves qué días son buenos para el amor, el dinero, el trabajo y los lanzamientos, con una nota del 1 al 10. Dentro hay un taller astrológico completo con el mismo motor que ponemos en las webs de astrólogos, y alrededor todo lo que necesita un producto real: cuentas, suscripciones, pagos, servidor propio y páginas pensadas para buscadores.",
+    "points": [
+      "Cada día puntuado del 1 al 10 en 7 áreas de la vida y 10 actividades; carta natal en palabras sencillas, compatibilidad, numerología, Luna vacía de curso por horas",
+      "Modo profesional para astrólogos: 9 tipos de carta, dos cartas lado a lado, tránsitos, revolución solar, firdarias, astrocartografía; rectificación de la hora de nacimiento en el plan VIP",
+      "Acceso con Google, Yandex, Telegram, código por correo o llave de acceso; 4 planes con 7 días de prueba, pagos con lava.top en rublos, dólares y euros",
+      "34 páginas escritas para búsquedas reales — horóscopo 2027 de cada signo, calendario lunar de cada mes, Mercurio retrógrado, eclipses — calculadas por el motor y actualizadas solas",
+      "Servidor propio, rápido en Rusia y fuera de ella; bot y canal de Telegram con horóscopo diario; se instala en el móvil como una app y funciona sin conexión"
+    ],
+    "numbers": [
+      [
+        "1–10",
+        "nota de cada día, 7 áreas"
+      ],
+      [
+        "34",
+        "páginas para buscadores"
+      ],
+      [
+        "4",
+        "planes, pago en ₽, $ y €"
+      ],
+      [
+        "<1′",
+        "diferencia con Swiss Ephemeris"
+      ]
+    ]
+  },
+  "fr": {
+    "tag": "Produit maison · astrologie · en ligne depuis octobre 2026",
+    "title": "Saliastro — un calendrier astrologique qui note chaque jour",
+    "link": "Ouvrir Saliastro",
+    "lead": "Notre propre produit pour celles et ceux qui ne connaissent pas l’astrologie : on saisit une date de naissance et l’on voit quels jours conviennent à l’amour, à l’argent, au travail et aux lancements, avec une note de 1 à 10. À l’intérieur, un véritable atelier astrologique sur le même moteur que les sites d’astrologues ; autour, tout ce dont un vrai produit a besoin : comptes, abonnements, paiements, serveur dédié et pages pensées pour la recherche.",
+    "points": [
+      "Chaque jour noté de 1 à 10 pour 7 domaines de vie et 10 activités ; thème natal en mots simples, compatibilité, numérologie, Lune vide de course à l’heure près",
+      "Mode pro pour les astrologues : 9 types de thèmes, deux thèmes côte à côte, transits, révolutions solaires, firdarias, astrocartographie ; rectification de l’heure de naissance dans la formule VIP",
+      "Connexion avec Google, Yandex, Telegram, code par e-mail ou clé d’accès ; 4 formules avec 7 jours d’essai, paiement via lava.top en roubles, dollars et euros",
+      "34 pages écrites pour de vraies recherches — horoscope 2027 pour chaque signe, calendrier lunaire pour chaque mois, Mercure rétrograde, éclipses — calculées par le moteur et mises à jour toutes seules",
+      "Serveur dédié, rapide en Russie comme à l’étranger ; bot et chaîne Telegram avec l’horoscope du jour ; s’installe sur le téléphone comme une appli et fonctionne hors ligne"
+    ],
+    "numbers": [
+      [
+        "1–10",
+        "note de chaque jour, 7 domaines"
+      ],
+      [
+        "34",
+        "pages pour la recherche"
+      ],
+      [
+        "4",
+        "formules, paiement en ₽, $ et €"
+      ],
+      [
+        "<1′",
+        "écart avec Swiss Ephemeris"
+      ]
+    ]
+  },
+  "it": {
+    "tag": "Prodotto nostro · astrologia · online da ottobre 2026",
+    "title": "Saliastro — un calendario astrologico che dà un voto a ogni giorno",
+    "link": "Apri Saliastro",
+    "lead": "Il nostro prodotto per chi non conosce l’astrologia: inserisci una data di nascita e vedi quali giorni sono adatti all’amore, ai soldi, al lavoro e ai nuovi inizi, con un voto da 1 a 10. Dentro c’è un laboratorio astrologico completo con lo stesso motore dei siti per astrologi; intorno, tutto ciò che serve a un prodotto vero: account, abbonamenti, pagamenti, server proprio e pagine pensate per la ricerca.",
+    "points": [
+      "Ogni giorno con un voto da 1 a 10 per 7 aree della vita e 10 attività; tema natale in parole semplici, compatibilità, numerologia, Luna fuori corso ora per ora",
+      "Modalità pro per astrologi: 9 tipi di tema, due temi affiancati, transiti, rivoluzioni solari, firdarie, astrocartografia; rettifica dell’ora di nascita nel piano VIP",
+      "Accesso con Google, Yandex, Telegram, codice via email o passkey; 4 piani con 7 giorni di prova, pagamenti tramite lava.top in rubli, dollari ed euro",
+      "34 pagine scritte per ricerche reali — oroscopo 2027 per ogni segno, calendario lunare per ogni mese, Mercurio retrogrado, eclissi — calcolate dal motore e aggiornate da sole",
+      "Server proprio, veloce in Russia e all’estero; bot e canale Telegram con l’oroscopo del giorno; si installa sullo smartphone come un’app e funziona offline"
+    ],
+    "numbers": [
+      [
+        "1–10",
+        "voto di ogni giorno, 7 aree"
+      ],
+      [
+        "34",
+        "pagine per la ricerca"
+      ],
+      [
+        "4",
+        "piani, pagamento in ₽, $ ed €"
+      ],
+      [
+        "<1′",
+        "scarto da Swiss Ephemeris"
+      ]
+    ]
+  },
+  "pt": {
+    "tag": "Produto próprio · astrologia · no ar desde outubro de 2026",
+    "title": "Saliastro — um calendário astrológico que dá nota a cada dia",
+    "link": "Abrir o Saliastro",
+    "lead": "O nosso próprio produto para quem não sabe astrologia: introduz-se uma data de nascimento e vê-se que dias são bons para o amor, o dinheiro, o trabalho e os lançamentos, com uma nota de 1 a 10. Lá dentro está uma bancada astrológica completa, com o mesmo motor dos sites de astrólogos; à volta, tudo o que um produto real precisa: contas, subscrições, pagamentos, servidor próprio e páginas pensadas para a pesquisa.",
+    "points": [
+      "Cada dia com nota de 1 a 10 em 7 áreas da vida e 10 atividades; mapa astral em palavras simples, compatibilidade, numerologia, Lua fora de curso hora a hora",
+      "Modo profissional para astrólogos: 9 tipos de mapa, dois mapas lado a lado, trânsitos, revolução solar, firdárias, astrocartografia; retificação da hora de nascimento no plano VIP",
+      "Entrada com Google, Yandex, Telegram, código por e-mail ou chave de acesso; 4 planos com 7 dias de experiência, pagamentos pela lava.top em rublos, dólares e euros",
+      "34 páginas escritas para pesquisas reais — horóscopo 2027 de cada signo, calendário lunar de cada mês, Mercúrio retrógrado, eclipses — calculadas pelo motor e atualizadas sozinhas",
+      "Servidor próprio, rápido na Rússia e no estrangeiro; bot e canal de Telegram com o horóscopo do dia; instala-se no telemóvel como uma app e funciona sem internet"
+    ],
+    "numbers": [
+      [
+        "1–10",
+        "nota de cada dia, 7 áreas"
+      ],
+      [
+        "34",
+        "páginas para a pesquisa"
+      ],
+      [
+        "4",
+        "planos, pagamento em ₽, $ e €"
+      ],
+      [
+        "<1′",
+        "diferença face ao Swiss Ephemeris"
+      ]
+    ]
+  },
+  "tr": {
+    "tag": "Kendi ürünümüz · astroloji · Ekim 2026’dan beri yayında",
+    "title": "Saliastro — her güne puan veren bir astroloji takvimi",
+    "link": "Saliastro’yu açın",
+    "lead": "Astroloji bilmeyenler için kendi ürünümüz: doğum tarihini girersiniz ve hangi günlerin aşk, para, iş ve yeni başlangıçlar için uygun olduğunu 1’den 10’a puanlarla görürsünüz. İçinde, astrolog siteleriyle aynı motoru kullanan eksiksiz bir astroloji atölyesi; çevresinde ise gerçek bir ürünün ihtiyaç duyduğu her şey var: hesaplar, abonelikler, ödemeler, kendi sunucusu ve arama için yazılmış sayfalar.",
+    "points": [
+      "Her gün 7 yaşam alanı ve 10 etkinlik için 1–10 arası puanlanır; sade dille doğum haritası, uyum, numeroloji, saat saat boşlukta Ay",
+      "Astrologlar için profesyonel mod: 9 harita türü, yan yana iki harita, transitler, güneş dönüşü, firdarlar, astrokartografi; VIP planında doğum saati düzeltmesi (rektifikasyon)",
+      "Google, Yandex, Telegram, e-posta kodu veya geçiş anahtarıyla giriş; 7 günlük denemeli 4 plan, lava.top üzerinden ruble, dolar ve euro ile ödeme",
+      "Gerçek aramalar için yazılmış 34 sayfa — her burç için 2027 yorumu, her ay için ay takvimi, Merkür retrosu, tutulmalar — motor tarafından hesaplanır ve kendiliğinden güncellenir",
+      "Kendi sunucusu: Rusya’da da yurt dışında da hızlı; günlük burç yorumu paylaşan Telegram botu ve kanalı; telefona uygulama gibi kurulur ve internetsiz çalışır"
+    ],
+    "numbers": [
+      [
+        "1–10",
+        "her güne puan, 7 alan"
+      ],
+      [
+        "34",
+        "arama için sayfa"
+      ],
+      [
+        "4",
+        "plan, ₽, $ ve € ile ödeme"
+      ],
+      [
+        "<1′",
+        "Swiss Ephemeris’ten sapma"
+      ]
+    ]
+  }
+}

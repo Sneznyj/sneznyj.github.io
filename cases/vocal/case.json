@@ -4,8 +4,16 @@
   "url_ru": "https://sneznyj.github.io/vocal-studio/",
   "logo": "favicon.svg",
   "logo_png": "icon-512.png",
-  "images": ["home-en.webp", "guitar-tuner-en.webp", "warmups-en.webp"],
-  "images_ru": ["home-ru.webp", "sing-along-ru.webp", "studio-ru.webp"],
+  "images": [
+    "home-en.webp",
+    "guitar-tuner-en.webp",
+    "warmups-en.webp"
+  ],
+  "images_ru": [
+    "home-ru.webp",
+    "sing-along-ru.webp",
+    "studio-ru.webp"
+  ],
   "image_mobile": "mobile-guitar-tuner-en.webp",
   "image_alt": {
     "home-en.webp": "Vocal Studio home page: record your voice and try autotune in one click",
@@ -21,12 +29,18 @@
   "facts": {
     "pages": 50,
     "pages_per_language": 25,
-    "languages": ["ru", "en"],
+    "languages": [
+      "ru",
+      "en"
+    ],
     "instrument_tuners": 11,
     "plus_chromatic_tuner": true,
     "analytics_goals": 7,
     "automated_tests": 53,
-    "search_consoles": ["Google Search Console", "Yandex Webmaster"],
+    "search_consoles": [
+      "Google Search Console",
+      "Yandex Webmaster"
+    ],
     "sign_up_required": false,
     "launched": "2026-10"
   },
@@ -43,10 +57,22 @@
       "Works on a phone, no sign-up, recordings never leave the device"
     ],
     "numbers": [
-      ["50", "pages in search, 2 languages"],
-      ["12", "tuners: 11 instruments + chromatic"],
-      ["7", "conversion goals tracked"],
-      ["0", "sign-ups or downloads needed"]
+      [
+        "50",
+        "pages in search, 2 languages"
+      ],
+      [
+        "12",
+        "tuners: 11 instruments + chromatic"
+      ],
+      [
+        "7",
+        "conversion goals tracked"
+      ],
+      [
+        "0",
+        "sign-ups or downloads needed"
+      ]
     ]
   },
   "ru": {
@@ -62,10 +88,209 @@
       "Работает с телефона, без регистрации, записи не покидают устройство"
     ],
     "numbers": [
-      ["50", "страниц в поиске, 2 языка"],
-      ["12", "тюнеров: 11 инструментов + хроматический"],
-      ["7", "целей-конверсий в Метрике"],
-      ["0", "регистраций и скачиваний"]
+      [
+        "50",
+        "страниц в поиске, 2 языка"
+      ],
+      [
+        "12",
+        "тюнеров: 11 инструментов + хроматический"
+      ],
+      [
+        "7",
+        "целей-конверсий в Метрике"
+      ],
+      [
+        "0",
+        "регистраций и скачиваний"
+      ]
+    ]
+  },
+  "order": 30,
+  "de": {
+    "tag": "Eigenes Produkt · Musik · 2026",
+    "title": "Vocal Studio — eine kostenlose Gesangs-App, gebaut, um gefunden zu werden",
+    "link": "Vocal Studio öffnen",
+    "lead": "Eine Web-App für Sängerinnen, Sänger und Musiker: Stimme aufnehmen und mit Autotune bearbeiten, zu jedem Song mit Live-Tonhöhe mitsingen, mit Klavier einsingen und 11 Instrumente stimmen. Gebaut wie unsere Kundenseiten: Jedes Werkzeug hat eine eigene Seite für das, wonach Menschen wirklich suchen, in zwei Sprachen — die Besucher kommen über Google und Yandex statt über Werbung.",
+    "points": [
+      "50 Seiten auf Englisch und Russisch, jede für eine echte Suchanfrage: „guitar tuner online“, „vocal warm-ups“, „sing along to a backing track“",
+      "Die Sprache richtet sich nach Browser und Zeitzone des Besuchers; hreflang, Sitemap und strukturierte Daten, damit Suchmaschinen jedem Land die richtige Version zeigen",
+      "Die Seiten sind vorgerendert, Suchmaschinen lesen den Text ohne JavaScript; neue Seiten werden sofort per IndexNow gemeldet",
+      "Statistik mit 7 Zielen (Mikrofon an, Gitarre gestimmt, Track exportiert …) zeigt, welche Seiten Menschen bringen, die die Website wirklich nutzen",
+      "Funktioniert auf dem Handy, ohne Anmeldung, Aufnahmen verlassen das Gerät nie"
+    ],
+    "numbers": [
+      [
+        "50",
+        "Seiten in der Suche, 2 Sprachen"
+      ],
+      [
+        "12",
+        "Stimmgeräte: 11 Instrumente + chromatisch"
+      ],
+      [
+        "7",
+        "gemessene Conversion-Ziele"
+      ],
+      [
+        "0",
+        "Anmeldungen oder Downloads nötig"
+      ]
+    ]
+  },
+  "es": {
+    "tag": "Producto propio · música · 2026",
+    "title": "Vocal Studio — una app gratuita para cantar, hecha para que la encuentren",
+    "link": "Abrir Vocal Studio",
+    "lead": "Una app web para cantantes y músicos: graba tu voz y aplícale autotune, canta cualquier canción con la afinación en directo, calienta la voz con piano y afina 11 instrumentos. La hicimos como hacemos las webs de clientes: cada herramienta tiene su página escrita para lo que la gente busca de verdad, en dos idiomas, así que las visitas llegan desde Google y Yandex y no desde anuncios.",
+    "points": [
+      "50 páginas en inglés y ruso, cada una pensada para una búsqueda real: «guitar tuner online», «vocal warm-ups», «sing along to a backing track»",
+      "El idioma se elige según el navegador y la zona horaria del visitante; hreflang, mapa del sitio y datos estructurados para que los buscadores muestren a cada país su versión",
+      "Las páginas se generan por adelantado, así que los buscadores leen el texto sin ejecutar JavaScript; las páginas nuevas se envían al instante por IndexNow",
+      "Analítica con 7 objetivos (micrófono activado, guitarra afinada, pista exportada…) que muestra qué páginas traen a gente que de verdad usa la web",
+      "Funciona en el móvil, sin registro; las grabaciones nunca salen del dispositivo"
+    ],
+    "numbers": [
+      [
+        "50",
+        "páginas en buscadores, 2 idiomas"
+      ],
+      [
+        "12",
+        "afinadores: 11 instrumentos + cromático"
+      ],
+      [
+        "7",
+        "objetivos de conversión medidos"
+      ],
+      [
+        "0",
+        "registros o descargas necesarios"
+      ]
+    ]
+  },
+  "fr": {
+    "tag": "Produit maison · musique · 2026",
+    "title": "Vocal Studio — une appli de chant gratuite, conçue pour être trouvée",
+    "link": "Ouvrir Vocal Studio",
+    "lead": "Une appli web pour chanteurs et musiciens : enregistrer sa voix et la passer à l’autotune, chanter sur n’importe quelle chanson avec la justesse en direct, s’échauffer au piano et accorder 11 instruments. Nous l’avons construite comme nos sites clients : chaque outil a sa page, écrite pour ce que les gens cherchent vraiment, en deux langues — les visiteurs viennent de Google et de Yandex plutôt que de la publicité.",
+    "points": [
+      "50 pages en anglais et en russe, chacune visant une vraie recherche : « guitar tuner online », « vocal warm-ups », « sing along to a backing track »",
+      "La langue est choisie d’après le navigateur et le fuseau horaire du visiteur ; hreflang, plan du site et données structurées pour que les moteurs montrent à chaque pays la bonne version",
+      "Les pages sont pré-générées : les moteurs lisent le texte sans exécuter de JavaScript ; les nouvelles pages sont signalées aussitôt via IndexNow",
+      "Des statistiques avec 7 objectifs (micro activé, guitare accordée, piste exportée…) montrent quelles pages amènent des gens qui utilisent vraiment le site",
+      "Fonctionne sur mobile, sans inscription ; les enregistrements ne quittent jamais l’appareil"
+    ],
+    "numbers": [
+      [
+        "50",
+        "pages dans la recherche, 2 langues"
+      ],
+      [
+        "12",
+        "accordeurs : 11 instruments + chromatique"
+      ],
+      [
+        "7",
+        "objectifs de conversion suivis"
+      ],
+      [
+        "0",
+        "inscription ou téléchargement nécessaire"
+      ]
+    ]
+  },
+  "it": {
+    "tag": "Prodotto nostro · musica · 2026",
+    "title": "Vocal Studio — un’app gratuita per cantare, fatta per farsi trovare",
+    "link": "Apri Vocal Studio",
+    "lead": "Un’app web per cantanti e musicisti: registra la voce e applica l’autotune, canta qualsiasi canzone con l’intonazione in tempo reale, fai riscaldamento con il pianoforte e accorda 11 strumenti. L’abbiamo costruita come i siti dei clienti: ogni strumento ha una sua pagina scritta per ciò che le persone cercano davvero, in due lingue, così le visite arrivano da Google e Yandex e non dalla pubblicità.",
+    "points": [
+      "50 pagine in inglese e russo, ognuna pensata per una ricerca reale: «guitar tuner online», «vocal warm-ups», «sing along to a backing track»",
+      "La lingua si sceglie in base al browser e al fuso orario del visitatore; hreflang, sitemap e dati strutturati perché i motori mostrino a ogni paese la versione giusta",
+      "Le pagine sono generate in anticipo: i motori leggono il testo senza eseguire JavaScript; le nuove pagine vengono segnalate subito tramite IndexNow",
+      "Statistiche con 7 obiettivi (microfono attivato, chitarra accordata, traccia esportata…) mostrano quali pagine portano persone che usano davvero il sito",
+      "Funziona sullo smartphone, senza registrazione; le registrazioni non lasciano mai il dispositivo"
+    ],
+    "numbers": [
+      [
+        "50",
+        "pagine nella ricerca, 2 lingue"
+      ],
+      [
+        "12",
+        "accordatori: 11 strumenti + cromatico"
+      ],
+      [
+        "7",
+        "obiettivi di conversione misurati"
+      ],
+      [
+        "0",
+        "registrazioni o download necessari"
+      ]
+    ]
+  },
+  "pt": {
+    "tag": "Produto próprio · música · 2026",
+    "title": "Vocal Studio — uma app gratuita para cantar, feita para ser encontrada",
+    "link": "Abrir o Vocal Studio",
+    "lead": "Uma app web para cantores e músicos: gravar a voz e aplicar autotune, cantar qualquer música com a afinação em tempo real, aquecer a voz com piano e afinar 11 instrumentos. Construímo-la como construímos os sites dos clientes: cada ferramenta tem a sua página, escrita para aquilo que as pessoas realmente procuram, em duas línguas — as visitas chegam pelo Google e pelo Yandex, não pela publicidade.",
+    "points": [
+      "50 páginas em inglês e russo, cada uma pensada para uma pesquisa real: «guitar tuner online», «vocal warm-ups», «sing along to a backing track»",
+      "A língua é escolhida pelo navegador e pelo fuso horário do visitante; hreflang, mapa do site e dados estruturados para que os motores mostrem a cada país a versão certa",
+      "As páginas são geradas antecipadamente: os motores leem o texto sem executar JavaScript; as páginas novas são enviadas de imediato via IndexNow",
+      "Estatísticas com 7 objetivos (microfone ligado, guitarra afinada, faixa exportada…) mostram que páginas trazem pessoas que realmente usam o site",
+      "Funciona no telemóvel, sem registo; as gravações nunca saem do dispositivo"
+    ],
+    "numbers": [
+      [
+        "50",
+        "páginas na pesquisa, 2 línguas"
+      ],
+      [
+        "12",
+        "afinadores: 11 instrumentos + cromático"
+      ],
+      [
+        "7",
+        "objetivos de conversão medidos"
+      ],
+      [
+        "0",
+        "registos ou downloads necessários"
+      ]
+    ]
+  },
+  "tr": {
+    "tag": "Kendi ürünümüz · müzik · 2026",
+    "title": "Vocal Studio — aramada bulunmak için yapılmış ücretsiz bir şarkı uygulaması",
+    "link": "Vocal Studio’yu açın",
+    "lead": "Şarkıcılar ve müzisyenler için bir web uygulaması: sesinizi kaydedip autotune uygulayın, canlı perde göstergesiyle istediğiniz şarkıya eşlik edin, piyanoyla ses açın ve 11 enstrümanı akort edin. Müşteri sitelerini yaptığımız gibi yaptık: her aracın, insanların gerçekten aradığı şeye göre yazılmış kendi sayfası var, iki dilde — ziyaretçiler reklamdan değil Google ve Yandex’ten geliyor.",
+    "points": [
+      "İngilizce ve Rusça 50 sayfa, her biri gerçek bir aramayı hedefliyor: “guitar tuner online”, “vocal warm-ups”, “sing along to a backing track”",
+      "Dil, ziyaretçinin tarayıcısına ve saat dilimine göre seçilir; hreflang, site haritası ve yapılandırılmış veri sayesinde arama motorları her ülkeye doğru sürümü gösterir",
+      "Sayfalar önceden oluşturulur, arama motorları metni JavaScript çalıştırmadan okur; yeni sayfalar IndexNow ile anında bildirilir",
+      "7 hedefli istatistik (mikrofon açıldı, gitar akort edildi, parça dışa aktarıldı…) hangi sayfaların siteyi gerçekten kullanan insanları getirdiğini gösterir",
+      "Telefonda çalışır, kayıt gerektirmez; kayıtlar cihazdan hiç çıkmaz"
+    ],
+    "numbers": [
+      [
+        "50",
+        "aramada sayfa, 2 dil"
+      ],
+      [
+        "12",
+        "akort aleti: 11 enstrüman + kromatik"
+      ],
+      [
+        "7",
+        "izlenen dönüşüm hedefi"
+      ],
+      [
+        "0",
+        "kayıt veya indirme gerekmez"
+      ]
     ]
   }
 }

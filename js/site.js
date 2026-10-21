@@ -1,8 +1,9 @@
-/* Лендинг студии: тема, шапка при прокрутке, бриф (письмо или копия), подсказка о версии на другом языке. */
+/* Лендинг студии: тема, шапка при прокрутке, меню языков, бриф (письмо или копия), подсказка о версии на языке посетителя. */
 (function () {
   'use strict';
   const doc = document.documentElement, body = document.body;
-  const ru = body.dataset.lang === 'ru';
+  const lang = body.dataset.lang || 'en';
+  const ru = lang === 'ru';
   const store = {
     get(k) { try { return localStorage.getItem(k); } catch (e) { return null; } },
     set(k, v) { try { localStorage.setItem(k, v); } catch (e) { /* без памяти браузера */ } },
@@ -18,6 +19,13 @@
   const onScroll = () => top && top.classList.toggle('scrolled', scrollY > 8);
   addEventListener('scroll', onScroll, { passive: true }); onScroll();
 
+  // ---------- меню языков: закрыть щелчком мимо и по Esc ----------
+  const lng = document.querySelector('.lng');
+  if (lng) {
+    document.addEventListener('click', (e) => { if (lng.open && !lng.contains(e.target)) lng.open = false; });
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && lng.open) { lng.open = false; lng.querySelector('summary').focus(); } });
+  }
+
   // ---------- кнопка тарифа → бриф с выбранным пакетом ----------
   document.addEventListener('click', (e) => {
     const a = e.target.closest('[data-plan]');
@@ -26,7 +34,7 @@
     if (sel) [...sel.options].forEach((o) => { if (o.text === a.dataset.plan) sel.value = o.value; });
   });
 
-  // ---------- бриф ----------
+  // ---------- бриф (подписи в письме — по-русски или по-английски: письмо читает студия) ----------
   const form = document.getElementById('briefForm');
   if (form) {
     const status = form.querySelector('.status');
@@ -72,18 +80,27 @@
     form.addEventListener('input', (e) => e.target.classList.remove('invalid'));
   }
 
-  // ---------- версия на языке посетителя: мягкая подсказка, без автоматического перехода ----------
-  const want = (navigator.languages || [navigator.language || '']).map((x) => String(x).toLowerCase());
-  const prefersRu = want.some((x) => /^(ru|uk|be|kk)\b/.test(x)), prefersEn = !prefersRu;
-  if (store.get('nv_lang_hint') !== '1' && ((!ru && prefersRu) || (ru && prefersEn && want[0] && !/^ru/.test(want[0])))) {
-    const alt = document.querySelector('.lang');
-    if (alt) {
-      const box = document.createElement('div');
-      box.className = 'lang-hint'; box.setAttribute('role', 'note');
-      box.innerHTML = ru ? `<span>This page is also in <a href="${alt.getAttribute('href')}" hreflang="en">English</a>.</span>` : `<span>Есть <a href="${alt.getAttribute('href')}" hreflang="ru">версия на русском</a>.</span>`;
-      const x = document.createElement('button'); x.type = 'button'; x.setAttribute('aria-label', ru ? 'Close' : 'Закрыть'); x.textContent = '×';
-      x.addEventListener('click', () => { store.set('nv_lang_hint', '1'); box.remove(); });
-      box.appendChild(x); document.body.appendChild(box);
-    }
+  // ---------- версия на языке посетителя: мягкая подсказка на его языке, без автоматического перехода ----------
+  const HINT = {
+    en: ['This page is also in <a>English</a>.', 'Close'],
+    ru: ['Есть <a>версия на русском</a>.', 'Закрыть'],
+    de: ['Diese Seite gibt es auch <a>auf Deutsch</a>.', 'Schließen'],
+    es: ['Esta página también está <a>en español</a>.', 'Cerrar'],
+    fr: ['Cette page existe aussi <a>en français</a>.', 'Fermer'],
+    it: ['Questa pagina è disponibile anche <a>in italiano</a>.', 'Chiudi'],
+    pt: ['Esta página também está disponível <a>em português</a>.', 'Fechar'],
+    tr: ['Bu sayfanın <a>Türkçe</a> sürümü de var.', 'Kapat'],
+  };
+  const want = (navigator.languages || [navigator.language || '']).map((x) => String(x).toLowerCase().split('-')[0]).map((x) => (/^(uk|be|kk)$/.test(x) ? 'ru' : x));
+  const pick = want.find((x) => HINT[x]);
+  const alt = pick && pick !== lang && document.querySelector(`.lng-menu a[hreflang="${pick}"]`);
+  if (alt && store.get('nv_lang_hint') !== '1') {
+    const box = document.createElement('div');
+    box.className = 'lang-hint'; box.setAttribute('role', 'note'); box.lang = pick;
+    const span = document.createElement('span'); span.innerHTML = HINT[pick][0];
+    const a = span.querySelector('a'); a.href = alt.getAttribute('href'); a.hreflang = pick;
+    const x = document.createElement('button'); x.type = 'button'; x.setAttribute('aria-label', HINT[pick][1]); x.textContent = '×';
+    x.addEventListener('click', () => { store.set('nv_lang_hint', '1'); box.remove(); });
+    box.append(span, x); document.body.appendChild(box);
   }
 })();
